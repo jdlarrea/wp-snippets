@@ -1,0 +1,104 @@
+// Variables
+
+// Colors - Default
+$white:		#fff;
+$black:		#000;
+$red:		#cc0000;
+$green: 	#00cc66;
+$blue:		#0066cc;
+$yellow:	#ffff00;
+
+// Colors - Theme
+$gray-48: #48484A;
+
+$orange-f6: #F68B1F;
+$orange-fc: #FCB040;
+
+$blue-0d: #0D7993;
+$blue-02: #024D5F;
+
+$green-00: #00806C;
+
+$gray-26: #262626;
+$gray-52: #525355;
+$gray-77: #77787B;
+$gray-b1: #B1B3B6;
+// ... other colors
+$gray-f0: #F0F0F0;
+$gray-dc: #DCDDDE;
+// ... other colors
+
+// Colors - Re-usable assingments
+$color-primary: $gray-48;
+$color-primary-light: $gray-f0;
+$color-primary-dark: $gray-26;
+
+$color-secondary: $orange-f6;
+$color-secondary-light: $orange-fc;
+$color-secondary-dark: $orange-f6;
+
+$color-tertiary: $blue-0d;
+$color-tertiary-dark: $blue-02;
+
+$color-quaternary: $green-00;
+$color-quaternary-dark: $green-00;
+
+$color-light:	$white;
+$color-dark:	$black;
+
+$color-success:	$green;
+$color-info:	$blue;
+$color-warning:	$yellow;
+$color-danger:	$red;
+
+// Font Family
+$font-family-primary: 'Bai Jamjuree', sans-serif;
+$font-family-secondary: sans-serif;
+
+// Font Weights - In Use
+$font-weight-regular:  	 	400;
+$font-weight-medium:  		500;
+$font-weight-semi-bold:  	600;
+$font-weight-bold:		  	700;
+
+// Font Weights - Not In Use
+// $font-weight-thin:  		100;
+// $font-weight-extra-light:	200;
+// $font-weight-light:  	  	300;
+// $font-weight-normal:  	 	400;
+// $font-weight-extra-bold:	800;
+// $font-weight-black:  		900;
+
+// Breakpoints
+$xs: 576px;
+$sm: 768px;
+$md: 1080px;
+$lg: 1200px;
+$xl: 1400px;
+$xxl: 1600px;
+
+// Wrapper/Container padding
+$grid-gutter-width: 40px;
+$grid-gutter-width-xs: 30px;
+
+// Widths
+// $max-width-wrapper: 1200px;
+$max-width-wrapper: 1224px;
+$max-width-wrapper-thin: 960px;
+$width-sidebar: 300px;
+$mobile-menu-pane-width: 350px;
+$mobile-menu-pane-width-xs: 90%;
+
+// Heights
+$navbar-height-desktop: 100px;
+$navbar-height-desktop-sticky: 80px;
+$navbar-height-mobile: 80px;
+$navbar-height-mobile-sticky: 60px;
+
+// Transition Speed
+$speed-fast : .3s;
+$speed-med  : .6s;
+$speed-slow : 1s;
+
+// Box Shadow
+$shadow : rgba($color-dark, .3) 0px 10px 30px -5px;

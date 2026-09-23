@@ -37,6 +37,13 @@ Most of these come from custom themes built on the [Underscores](https://undersc
 | [`swiper-cards`](latest-posts/swiper-cards) | Post-card slider with editor-chosen query modes (latest, by category or tag, hand-picked) | `WP_Query`, ACF, Swiper |
 | [`featured-plus-list`](latest-posts/featured-plus-list) | One large featured post beside a list of the next few, with the same query modes | `WP_Query`, ACF, CSS only |
 
+### Stats
+
+| Snippet | What it shows | Built with |
+|---|---|---|
+| [`content-with-2x2-grid`](stats/content-with-2x2-grid) | Content block on the left, a 2x2 grid of counting numbers on the right | CSS flex and grid, CounterUp, ACF |
+| [`row-with-dividers`](stats/row-with-dividers) | A single row of counting numbers with dividers, light and dark themes | CSS flex, CounterUp, ACF |
+
 ### Testimonials
 
 | Snippet | What it shows | Built with |

@@ -1,0 +1,23 @@
+var $ = jQuery;
+$window = $(window);
+
+$(document).ready(function(){
+	// Stats - start
+	var counterUp = window.counterUp["default"];
+	var $counters = $(".stat");
+	
+	$counters.each(function (ignore, counter) {
+		$(this).css('width', $(this).innerWidth());
+		var waypoint = new Waypoint( {
+			element: $(this),
+			handler: function() { 
+				counterUp(counter, {
+					duration: 1000,
+					delay: 16
+				}); 
+				this.destroy();
+			},
+			offset: 'bottom-in-view',
+		} );
+	});
+});

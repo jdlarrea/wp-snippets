@@ -1,0 +1,77 @@
+// Variables
+
+// Colors - Default
+$white:		#fff;
+$black:		#161D22;
+$red: 		#EB3F2C;
+$green: 	#4beb2c;
+$blue:		#2c4beb;
+$yellow:	#CBB176;
+$purple:	#3E2C56;
+// ... other colors
+$gray_400: #3E3E3E;
+$gray_500: #2C2C2C;
+
+// Colors - Re-usable assingments
+$color-primary: $red;
+$color-primary-dark: #BF3425;
+
+$color-secondary: $purple;
+$color-secondary-light: $purple;
+$color-secondary-dark: $purple;
+
+$color-tertiary: $yellow;
+$color-tertiary-dark: $yellow;
+
+$color-light:	$white;
+$color-dark:	$black;
+
+$color-success:	$green;
+$color-info:	$blue;
+$color-warning:	$yellow;
+$color-danger:	$red;
+
+// Font Family
+$font-family-primary: 'Onest', sans-serif;
+$font-family-secondary: 'Onest', sans-serif;
+
+// Font Weights - In Use
+$font-weight-light:  	  	300;
+$font-weight-normal:  	 	400;
+$font-weight-regular:  	 	400;
+$font-weight-medium:  		500;
+$font-weight-semi-bold:  	600;
+$font-weight-bold:		  	700;
+$font-weight-extra-bold:	800;
+$font-weight-black:  		900;
+
+// Font Weights - Not In Use
+// $font-weight-thin:  		100;
+// $font-weight-extra-light:	200;
+
+
+// Breakpoints
+$xs: 576px;
+$sm: 768px;
+$md: 1080px;
+$lg: 1280px;
+$xl: 1520px;
+
+// Wrapper/Container padding
+$grid-gutter-width: 40px;
+$grid-gutter-width-xs: 20px;
+
+// Sidebar
+$width-sidebar: 300px;
+
+// Navbar height
+$navbar-height : 90px;
+$navbar-height-xs : 70px;
+
+// Transition Speed
+$speed-fast : .3s;
+$speed-med  : .6s;
+$speed-slow : 1s;
+
+// Box Shadow
+$shadow : rgba($color-dark, .3) 0px 10px 30px -5px;
