@@ -29,7 +29,7 @@ WordPress (Underscores-based custom theme) · PHP · Advanced Custom Fields Pro 
 
 - **Plain `wp_nav_menu()`.** Two calls with their own `theme_location` and `menu_class`, styled directly with CSS, so there's no custom walker or helper.
 - **CSS-drawn separators.** The pipes between legal links come from `:after`, and `:last-child` removes the extra one, so editors can add or remove links without touching markup.
-- **Graceful without ACF.** Each ACF read is guarded, and the logo and social-links markup already handles empty values, so a missing plugin or unset option doesn't cause an error.
+- **Graceful without ACF.** Each ACF read is guarded, and the logo and social-links markup already handles empty values, so a missing plugin doesn't cause a fatal error.
 - **Options-page driven.** Logo, social links, copyright and scripts are all edited in the admin.
 - **Simple responsive behavior.** One flex row that becomes a centered column below the small breakpoint.
 

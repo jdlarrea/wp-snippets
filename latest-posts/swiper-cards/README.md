@@ -37,7 +37,7 @@ WordPress (Underscores-based custom theme) · PHP (`WP_Query`) · Advanced Custo
 - **Content-managed queries.** One ACF select field switches the whole `WP_Query` between latest, taxonomy-filtered and manual modes, with the matching category, tag or post picker shown only when it applies.
 - **Manual order respected.** Individual mode uses `post__in` with `orderby => post__in`, so posts appear in the editor's order.
 - **Reusable card.** The slider loops over posts and calls `get_template_part()` for each card, so the card markup lives in one place.
-- **Responsive slider, not just responsive CSS.** Slides per view and slides per group change together at each breakpoint, so paging never leaves half a set on screen.
+- **Responsive slider, not just responsive CSS.** Slides per view and slides per group change together at each breakpoint, so each page advances a full set.
 - **Different controls per screen size.** Dots on desktop and arrows below 1080px, switched with CSS only.
 
 ## Notes

@@ -8,7 +8,7 @@ A split-layout homepage hero. Copy and a button sit on the left, an image or vid
 - Two Slick sliders run in sync: one for the copy, one for the media. They fade together on a 5-second autoplay loop.
 - A single prev/next arrow bar controls both sliders.
 - On each new slide the eyebrow, header and button animate in from different directions.
-- Both sliders stay hidden until Slick has initialized, so visitors never see unstyled slides stacked on top of each other.
+- Both sliders stay hidden until Slick has initialized, so the un-initialized slides aren't shown stacked on the page.
 - Below 992px the layout stacks: media on top, then copy, then the arrows.
 
 ## Where to look
@@ -28,7 +28,7 @@ WordPress (Underscores-based custom theme) · PHP · Advanced Custom Fields Pro 
 ## Highlights
 
 - **Synced sliders with `asNavFor`.** The copy slider drives autoplay and the arrows, and the media slider follows it, so one loop and one set of controls run both.
-- **One loop, two outputs.** The template walks the slides once and builds the left and right markup in parallel, so the two sides can never get out of order.
+- **One loop, two outputs.** The template walks the slides once and builds the left and right markup in parallel, so the two sides stay in the same order.
 - **No flash of unstyled content.** Slides are hidden until Slick adds `.slick-initialized`, and only the first slide is shown before that.
 - **CSS-driven entrance animation.** The `.slick-active` class triggers the staggered slide-in, so no extra JS is needed for it.
 - **Content-managed.** Image vs. video is a conditional ACF field, and the actual rendering is handled by shared template parts.

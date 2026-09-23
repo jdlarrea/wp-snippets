@@ -6,7 +6,7 @@ A logo section with a header, an optional intro text, custom dot pagination and 
 
 - Editors add a **header**, optional **text** and a repeater of **logo items**.
 - Each logo item has an **image**, an optional **URL** and a **New Tab?** switch.
-- Logos with a URL render as links, and logos without one render as plain elements, so the markup never contains an empty `href`.
+- Logos with a URL render as links, and logos without one render as plain elements, so no empty `href` is output.
 - Slick shows 5 logos at a time (2 on tablets and phones), advances a full set every 3 seconds, and shows dots for each set.
 - The dots are custom-built buttons, placed in the header area instead of below the slider.
 - Logo images load lazily.
@@ -28,7 +28,7 @@ WordPress (Underscores-based custom theme) · PHP · Advanced Custom Fields Pro 
 ## Highlights
 
 - **Optional links done cleanly.** The template checks whether a URL exists and builds either an `<a>` or a `<div>`, and only adds `target="_blank"` when the switch is on.
-- **Alt text is always present.** Each logo uses its `alt` from the media library, with a fallback when the image has none.
+- **Alt text on every logo.** Each logo uses its `alt` from the media library, with a fallback when the image has none.
 - **Custom dots.** `customPaging` and `appendDots` render the dots as buttons and move them into the header area, and SCSS styles the active, hover and focus states.
 - **Lazy loading that survives sliding.** Logos use `data-src`, and the `afterChange` hook re-checks the page so images that slid into view are loaded.
 - **Content-managed.** The whole component is a small ACF group.

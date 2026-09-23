@@ -7,7 +7,7 @@ A full-height homepage hero with a headline, sub-header and buttons on the left,
 - Editors set a **header**, **sub-header** and any number of **buttons**, each with its own style and an option to open in a new tab.
 - **Image:** used as a full-bleed background, with position presets or a custom `background-position` value.
 - **Video:** a muted, looping, autoplaying `mp4` (with an optional poster) shown inside a circular frame on the right.
-- If there's a video, it plays inside the circle on desktop. If there isn't, the image fills the background instead.
+- The video is expected to be set. On mobile, where the circle is hidden, the image is shown instead.
 - The circle frame and two outlined circles animate in a slow, repeating loop.
 - At 767px and below, the video circle is hidden, the image always shows, and the copy centers.
 
@@ -29,7 +29,7 @@ WordPress (Underscores-based custom theme) · PHP · Advanced Custom Fields Pro 
 
 - **No JS.** The circle "pop" loops are three keyframe animations, so there's nothing to load or run for the motion.
 - **Editor-friendly image control.** ACF offers position presets, plus a "Custom" option that reveals a text field for any `background-position` value, and the template builds the inline style for whichever one is picked.
-- **Video only when set.** The `<video>` element and its poster attribute are only output when a video file exists, and the background image is shown on desktop otherwise.
+- **Video markup only when set.** The `<video>` element and its poster attribute are only output when a video file is set.
 - **Self-contained styles.** The component keeps its own breakpoint and gradient variables at the top of its SCSS file, so it can be dropped into another theme and adjusted in one place.
 
 ## Notes

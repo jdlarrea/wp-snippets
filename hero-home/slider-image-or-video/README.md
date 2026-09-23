@@ -30,7 +30,7 @@ WordPress (Underscores-based custom theme) · PHP · Advanced Custom Fields Pro 
 
 - **Repeater-driven and content-managed.** ACF repeater with conditional fields (image group vs. video group depending on the slide type).
 - **Semantic heading handling.** The first slide gets the `h1` and the rest don't.
-- **Component reuse.** Backgrounds, overlays and buttons are rendered through shared template parts, so every component in the theme handles them the same way.
+- **Component reuse.** Backgrounds, overlays and buttons are rendered through shared template parts, so each one is handled in a single place.
 - **Multiple instances are safe.** The JS initializes each `.component.hero-home` separately and scopes its pagination element to its own container.
 - **Modern CSS where it helps.** A `:has(.hero-home)` rule removes the page's top padding only when a hero is present.
 
