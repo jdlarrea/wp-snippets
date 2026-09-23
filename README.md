@@ -37,6 +37,14 @@ Most of these come from custom themes built on the [Underscores](https://undersc
 | [`swiper-cards`](latest-posts/swiper-cards) | Post-card slider with editor-chosen query modes (latest, by category or tag, hand-picked) | `WP_Query`, ACF, Swiper |
 | [`featured-plus-list`](latest-posts/featured-plus-list) | One large featured post beside a list of the next few, with the same query modes | `WP_Query`, ACF, CSS only |
 
+### Testimonials
+
+| Snippet | What it shows | Built with |
+|---|---|---|
+| [`swiper-quote-with-photo`](testimonials/swiper-quote-with-photo) | Full-width slider with a quote panel and a photo that breaks out to the page edge | Swiper, ACF |
+| [`swiper-synced-avatars`](testimonials/swiper-synced-avatars) | Photo strip synced to a crossfading quote slider, with global or per-page content | Swiper `thumbs`, ACF options |
+| [`slick-manual-or-cpt`](testimonials/slick-manual-or-cpt) | Carousel filled by hand or from a Testimonial post type, with recolorable SVG logos | Slick, custom post type, ACF |
+
 ### Footers
 
 | Snippet | What it shows | Built with |

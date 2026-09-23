@@ -1,0 +1,88 @@
+// Variables
+
+// Colors - Default
+$white:		#fff;
+// ... other colors
+$red:		#cc0000;
+$green: 	#00cc66;
+$blue:		#0066cc;
+$yellow:	#ffff00;
+
+// Colors - Theme
+$green_0a: #0A6B6B;
+$green_09: #096B6A;
+$green_0c: #0C3A3A;
+
+$orange_e7: #E78933;
+$orange_d1: #D18147;
+// ... other colors
+
+// Colors - Grays
+$black_01: #010c0c;
+// ... other colors
+
+// Colors - Re-usable assingments
+$color-primary: $green_0a;
+$color-primary-light: $green_09;
+$color-primary-dark: $green_0c;
+
+$color-secondary: $orange_e7;
+$color-secondary-light: $orange_e7;
+$color-secondary-dark: $orange_d1;
+
+$color-tertiary: $orange_d1;
+$color-tertiary-dark: $orange_d1;
+
+$color-light:	$white;
+$color-dark:	$black_01;
+
+$color-success:	$green;
+$color-info:	$blue;
+$color-warning:	$yellow;
+$color-danger:	$red;
+
+// Font Family
+$font-family-primary: 'Lato', sans-serif;
+$font-family-secondary: 'Plus Jakarta Sans', sans-serif;
+
+// Font Weights - In Use
+$font-weight-regular:  	 	400;
+$font-weight-medium:  		500;
+$font-weight-semi-bold:  	600;
+$font-weight-bold:		  	700;
+$font-weight-extra-bold:	800;
+
+// Transition Speed
+$speed-fast : .3s;
+$speed-med  : .6s;
+$speed-slow : 1s;
+
+// Breakpoints
+$xxs: 375px;
+$xs: 567px;
+$sm: 768px;
+$md: 1080px;
+$lg: 1200px;
+$xl: 1400px;
+$xxl: 1600px;
+
+// Wrapper/Container padding
+$grid-gutter-width: 50px;
+$grid-gutter-width-xl: 40px;
+$grid-gutter-width-xs: 30px;
+
+// ********************
+// NAVBAR HEIGHTS
+// navbar - desktop
+$navbar-height-desktop: 110px;
+$navbar-height-desktop-sticky: 80px;
+
+// navbar - mobile
+$navbar-height-mobile: 70px;
+$navbar-height-mobile-sticky: 60px;
+
+// navbar - mobile slideouts
+$mobile-menu-pane-width: 400px;
+$mobile-menu-pane-width-xs: 100%;
+
+

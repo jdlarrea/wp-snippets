@@ -1,0 +1,14 @@
+/*
+Theme Name: Acme
+Description: A custom WordPress theme built on the Underscores starter theme.
+Version: 2.0
+*/
+
+// Global Styles
+@import 'variables';
+@import 'utils/mixins';
+// ... other imports
+
+// Components
+@import 'components/testimonial_carousel';
+// ... other components

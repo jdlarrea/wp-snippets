@@ -1,0 +1,167 @@
+// ******************************
+// COMPONENT - testimonials
+.component.testimonials {
+	.section-header {
+		display: flex;
+		margin-bottom: 60px;
+		align-items: center;
+		justify-content: space-between;
+
+		.content-body {
+			width: 65%;
+			max-width: 800px;
+			margin-right: 40px;
+		}
+
+		.section-button {
+			flex-shrink: 0;
+		}
+	}
+
+	.swiper-testimonial-images {
+		margin-bottom: 50px;
+
+		.swiper-slide {
+			&.swiper-slide-thumb-active {
+				.inner-wrapper {
+					border-color: $color-primary-light;
+
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
+
+			.inner-wrapper {
+				margin-bottom: 20px;
+				padding: 15px 14px;
+				border-radius: 15px;
+				border: 2px solid $white;
+				position: relative;
+				transition: border-color $speed-fast;
+
+				&:after {
+					content: '\e900';
+					font-family: 'acme-icons' !important;
+					color: $color-primary-light;
+					position: absolute;
+					top: 100%;
+					left: 50%;
+					z-index: 2;
+					font-size: 50px;
+					transform: translate(-50%, -24px) scaleX(1.2);
+					opacity: 0;
+					transition: opacity $speed-fast;
+				}
+			}
+
+			.acme-figure.main-image {
+				border-radius: 15px;
+
+				.placeholder {
+					padding-bottom: 115%;
+				}
+
+				.display {
+					background-color: transparent;
+				}
+			}
+
+			.acme-figure.logo-icon {
+				.display {
+					img {
+						max-height: 98px;
+						max-width: 260px;
+						position: absolute;
+						top: auto;
+						bottom: 55px;
+						left: 54px;
+						z-index: 1;
+						object-position: 0% 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.swiper-testimonial-contents {
+		width: 90%;
+	}
+
+	@include media-max( $xxl ) {
+		.swiper-testimonial-images {
+			.swiper-slide {
+				.inner-wrapper {
+					.acme-figure.logo-icon {
+						.display {
+							img {
+								max-height: 70px;
+								max-width: 150px;
+								bottom: 40px;
+								left: 40px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include media-max( $lg ) {
+		.swiper-testimonial-images {
+			.swiper-slide {
+				.inner-wrapper {
+					.acme-figure.logo-icon {
+						.display {
+							img {
+								max-height: 50px;
+								max-width: 100px;
+								bottom: 30px;
+								left: 30px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include media-max( $md ) {
+		.section-header {
+			flex-direction: column;
+			row-gap: 30px;
+			align-items: flex-start;
+
+			.content-body {
+				width: 100%;
+				margin-right: 0;
+			}
+		}
+
+
+		.swiper-testimonial-images {
+			.swiper-slide {
+				.inner-wrapper {
+					margin-bottom: 20px;
+					padding: 10px 10px;
+					border-radius: 10px;
+
+					&:after {
+						font-size: 40px;
+						transform: translate(-50%, -18px) scaleX(1.2);
+					}
+
+					.acme-figure.main-image {
+						border-radius: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	@include media-max($sm) {
+		.swiper-testimonial-contents {
+			width: 100%;
+		}
+	}
+}
