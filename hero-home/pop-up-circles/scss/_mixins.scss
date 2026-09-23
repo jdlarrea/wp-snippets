@@ -1,0 +1,31 @@
+// Mixins
+
+// Media Queries
+@mixin media-min($min) {
+	@media (min-width: $min) {
+		@content;
+	}
+}
+
+@function calculateMqSize($size) {
+  $maxSize : $size - 1px;
+  @return $maxSize;
+}
+
+@mixin media-max($max) {
+	@media (max-width: calculateMqSize($max)) {
+		@content;
+	}
+}
+	
+@mixin media-between($min, $max) {
+	@media (min-width: $min) and (max-width: $max) {
+		@content;
+	}
+}
+
+// Letter Spacing
+@function ls($size) {
+  $va: calc($size / 1000);
+  @return $va * 1em;
+}

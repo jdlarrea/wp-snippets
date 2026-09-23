@@ -1,0 +1,311 @@
+
+// ****************************************
+// Component Variables
+// - adjust these however needed to match global colors/breakpoints/font styling/etc.
+$breakpoint_4k: 'min-width: 1921px';
+$breakpoint_xl: 'max-width: 1440px';
+$breakpoint_xlg: 'max-width: 1280px';
+$breakpoint_lg: 'max-width: 991px';
+$breakpoint_md: 'max-width: 767px';
+$breakpoint_sm: 'max-width: 575px';
+$background_color_hero: #777;
+
+$gradient_color_1: rgba(0, 0, 0, 1);
+$gradient_color_2: rgba(150, 150, 150, 1);
+$gradient_orange_color_1: rgba(235, 166, 47, 1);
+$gradient_orange_color_2: rgba(235, 127, 39, 1);
+$gradient_orange_color_3: rgba(216, 74, 18, 1);
+
+// ****************************************
+// COMPONENT - HERO HOME
+// ****************************************
+$gradient_color_1: rgba(2, 5, 48, 1);
+$gradient_color_2: rgba(3, 51, 130, 1);
+$gradient_color_3: rgba(26, 216, 211, 1);
+
+.component-hero-home {
+	position: relative;
+	background-color: $background_color_hero;
+	background-image: linear-gradient(120deg, $gradient_color_1 30%, $gradient_color_2 70%, $gradient_color_3);
+
+	.hero-image {
+		display: none;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		background-size: cover;
+		background-position: 50% 50%;
+
+		&.show-desktop {
+			display: block;
+		}
+	}
+
+	.hero-video {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	.component-hero-home-wrapper {
+		display: flex;
+		min-height: 100vh;
+		position: relative;
+		z-index: 2;
+		align-items: center;
+		color: $white;
+
+		.hero-content {
+			width: 42%;
+			padding: 40px 0;
+			position: relative;
+			z-index: 2;
+
+			h1.header {
+				color: $white;
+			}
+
+			.header {
+				font-family: $font-family-primary;
+				font-weight: normal;
+				font-size: 74px;
+				line-height: 1.108;
+				letter-spacing: ls(-10);
+			}
+
+			.sub-header {
+				margin-top: 40px;
+				font-size: 24px;
+				line-height: 1.25;
+			}
+
+			.btn-hero {
+				margin-top: 28px;
+				font-size: 18px;
+				line-height: 2.34;
+				color: #eba62f;
+				&:hover {
+					color: #d3952a;
+				}
+				padding: 12px 0;
+			}
+		}
+
+		.hero-video-box {
+			width: 50%;
+			height: auto;
+			padding-top: 50%;
+			margin: 140px 60px 140px 0;
+			position: relative;
+			right: -60px;
+			z-index: 1;
+
+			.video-box-container {
+				width: 100%;
+				height: 100%;
+				border-radius: 100%;
+				overflow: hidden;
+				background-image: linear-gradient(90deg, $gradient_orange_color_1 0%, $gradient_orange_color_2 20%, $gradient_orange_color_3 100%);
+				padding: 25px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				transform: scale(0);
+				animation: circle-video-pop 10s linear .5s infinite;
+
+				.video-box-wrapper {
+					height: 100%;
+					width: 100%;
+					border-radius: 100%;
+					overflow: hidden;
+					position: relative;
+					z-index: 2;
+				}
+			}
+
+			.design-circle {
+				border: 2px solid rgba( $white, .3 );
+				position: absolute;
+				z-index: 0;
+				border-radius: 100%;
+
+				&.circle-1 {
+					width: 150px;
+					height: 150px;
+					right: 0;
+					top: 0;
+					transform: translate(50%, -50%) scale(0);
+					animation: circle-1-pop 10s linear infinite;
+				}
+				
+				&.circle-2 {
+					width: 600px;
+					height: 600px;
+					right: 0;
+					top: 100%;
+					transform: translate(50%, -50%) scale(0);
+					animation: circle-2-pop 10s linear .75s infinite;
+				}
+			}
+		}
+	}
+
+	//4k
+	@media screen and ( $breakpoint_4k ) {
+		.component-hero-home-wrapper {
+			/*min-height: 1200px;*/
+
+			.hero-content {
+				max-width: 44%;
+				padding: 80px 0 40px 0;
+	
+				.header {
+					font-size: 80px;
+				}
+				
+				.sub-header {
+					font-size: 26px;
+				}
+	
+				.btn-hero {
+					font-size: 20px;
+				}
+			}
+		}
+
+	}
+
+	@media screen and ( $breakpoint_xl ) {
+		.component-hero-home-wrapper {
+			min-height: 750px;
+		}
+	}
+
+	@media screen and ( $breakpoint_xlg ) {
+		.component-hero-home-wrapper {
+			min-height: 650px;
+
+			.hero-content {
+				max-width: 43%;
+				padding: 80px 0 40px 0;
+	
+				.header {
+					font-size: 55px;
+				}
+				
+				.sub-header {
+					font-size: 21px;
+				}
+	
+				.btn-hero {
+					font-size: 17px;
+				}
+			}
+
+			.hero-video-box {
+				.design-circle {
+					&.circle-1 {
+						width: 100px;
+						height: 100px;
+					}
+
+					&.circle-2 {
+						width: 400px;
+						height: 400px;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and ( $breakpoint_lg ) {
+		.component-hero-home-wrapper {
+			min-height: 520px;
+
+			.hero-content {
+				max-width: 43%;
+				padding: 80px 0 20px 0;
+	
+				.header {
+					font-size: 45px;
+				}
+				
+				.sub-header {
+					font-size: 17px;
+				}
+	
+				.btn-hero {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	// **********
+	// Tablet - Landscape Styles
+	@media screen and ( $breakpoint_md ) {
+		.hero-image {
+			display: block;
+		}
+
+		.hero-video-box {
+			display: none;
+		}
+
+		.component-hero-home-wrapper {
+			min-height: 400px;
+
+			.hero-content {
+				width: 100%;
+				max-width: 100%;
+				padding-bottom: 340px;
+				text-align: center;
+
+				.header {
+					margin-top: 50px;
+					margin-bottom: 30px;
+				}
+
+				.sub-header {
+					/*font-size: 26px;
+					line-height: 1.2;*/
+				}
+
+				.btn-hero {
+					justify-content: center;
+				}
+			}
+		}
+	}
+
+
+	@media screen and ( $breakpoint_sm ) {
+
+		.component-hero-home-wrapper {
+			min-height: unset;
+
+			.hero-content {
+				.header {
+					/*font-size: 50px;*/
+				}
+
+				.sub-header {
+					font-size: 20px;
+				}
+
+				.btn-hero {
+					justify-content: center;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,203 @@
+@keyframes circle-1-pop {
+	// Start
+	0% {
+		right: 0;
+		top: 0;
+		transform: translate(50%, -50%) scale(0);
+	}
+
+	// Pop out 1
+	9% {
+		right: 0;
+		top: 0;
+		transform: translate(50%, -50%) scale(0);
+	}
+	10% {
+		right: 0;
+		top: 0;
+		transform: translate(50%, -50%) scale(1);
+	}
+	// Pop in 1
+	29% {
+		right: 0;
+		top: 0;
+		transform: translate(50%, -50%) scale(1);
+	}
+	30% {
+		right: 0;
+		top: 0;
+		transform: translate(50%, -50%) scale(0);
+	}
+	// Move corner 1
+	31% {
+		right: 100%;
+		top: 100%;
+		transform: translate(50%, -50%) scale(0);
+	}
+
+	// Pop out 2
+	40% {
+		right: 100%;
+		top: 100%;
+		transform: translate(50%, -50%) scale(0);
+	}
+	41% {
+		right: 100%;
+		top: 100%;
+		transform: translate(50%, -50%) scale(1);
+	}
+	// Pop in 2
+	60% {
+		right: 100%;
+		top: 100%;
+		transform: translate(50%, -50%) scale(1);
+	}
+	61% {
+		right: 100%;
+		top: 100%;
+		transform: translate(50%, -50%) scale(0);
+	}
+	// Move corner 2
+	62% {
+		right: 0;
+		top: 100%;
+		transform: translate(50%, -50%) scale(0);
+	}
+
+	// Pop out 3
+	71% {
+		right: 0;
+		top: 100%;
+		transform: translate(50%, -50%) scale(0);
+	}
+	72% {
+		right: 0;
+		top: 100%;
+		transform: translate(50%, -50%) scale(1);
+	}
+	// Pop in 3
+	91% {
+		right: 0;
+		top: 100%;
+		transform: translate(50%, -50%) scale(1);
+	}
+	92% {
+		right: 0;
+		top: 100%;
+		transform: translate(50%, -50%) scale(0);
+	}
+	93% {
+		right: 0;
+		top: 0;
+		transform: translate(50%, -50%) scale(0);
+	}
+}
+
+@keyframes circle-2-pop {
+	// Start
+	0% {
+		right: 0;
+		top: 100%;
+		transform: translate(50%, -50%) scale(0);
+	}
+
+	// Pop out 1
+	9% {
+		right: 0;
+		top: 100%;
+		transform: translate(50%, -50%) scale(0);
+	}
+	10% {
+		right: 0;
+		top: 100%;
+		transform: translate(50%, -50%) scale(1);
+	}
+	// Pop in 1
+	29% {
+		right: 0;
+		top: 100%;
+		transform: translate(50%, -50%) scale(1);
+	}
+	30% {
+		right: 0;
+		top: 100%;
+		transform: translate(50%, -50%) scale(0);
+	}
+	// Move corner 1
+	31% {
+		right: 0;
+		top: 0;
+		transform: translate(50%, -50%) scale(0);
+	}
+
+	// Pop out 2
+	40% {
+		right: 0;
+		top: 0;
+		transform: translate(50%, -50%) scale(0);
+	}
+	41% {
+		right: 0;
+		top: 0;
+		transform: translate(50%, -50%) scale(1);
+	}
+	// Pop in 2
+	60% {
+		right: 0;
+		top: 0;;
+		transform: translate(50%, -50%) scale(1);
+	}
+	61% {
+		right: 0;
+		top: 0;
+		transform: translate(50%, -50%) scale(0);
+	}
+	// Move corner 2
+	62% {
+		right: 0;
+		top: 0;
+		transform: translate(50%, -50%) scale(0);
+	}
+
+	// Pop out 3
+	71% {
+		right: 100%;
+		top: 100%;
+		transform: translate(50%, -50%) scale(0);
+	}
+	72% {
+		right: 100%;
+		top: 100%;
+		transform: translate(50%, -50%) scale(1);
+	}
+	// Pop in 3
+	91% {
+		right: 100%;
+		top: 100%;
+		transform: translate(50%, -50%) scale(1);
+	}
+	92% {
+		right: 100%;
+		top: 100%;
+		transform: translate(50%, -50%) scale(0);
+	}
+	93% {
+		right: 100%;
+		top: 100%;
+		transform: translate(50%, -50%) scale(0);
+	}
+}
+
+@keyframes circle-video-pop {
+	// Start
+	0% { transform: scale(0);}
+
+	// Pop out 1
+	9% { transform: scale(0);}
+	10% { transform: scale(1);}
+
+	// Pop in 1
+	91% { transform: scale(1);}
+	92% { transform: scale(0);}
+	93% { transform: scale(0);}
+}
