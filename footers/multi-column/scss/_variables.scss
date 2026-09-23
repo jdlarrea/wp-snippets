@@ -1,0 +1,94 @@
+// Variables
+
+// Colors - Default
+$white:		#fff;
+// ... other colors
+$red:		#cc0000;
+$green: 	#00cc66;
+$blue:		#0066cc;
+$yellow:	#ffff00;
+
+// Colors - Theme
+$blue_01: #0172b0;
+$blue_0b: #0B243C;
+$blue_ce: #CEDDE3;
+// ... other colors
+$gray_5d: #5D6567;
+// ... other colors
+
+// Colors - Theme anomalies
+$blue_08: #081B2E;
+// ... other colors
+
+// Colors - Re-usable assingments
+$color-primary: $blue_01;
+$color-primary-light: $blue_01;
+$color-primary-dark: $blue_0b;
+
+$color-secondary: $blue_ce;
+$color-secondary-light: $blue_ce;
+$color-secondary-dark: $blue_ce;
+
+$color-tertiary: $gray_5d;
+$color-tertiary-dark: $gray_5d;
+
+$color-light:	$white;
+$color-dark:	$gray_5d;
+
+$color-success:	$green;
+$color-info:	$blue;
+$color-warning:	$yellow;
+$color-danger:	$red;
+
+// Font Family
+$font-family-primary: 'Work Sans', sans-serif;
+$font-family-secondary: 'Playfair Display', sans-serif;
+$font-family-tertiary: 'Playfair Display SC', sans-serif;
+
+// Font Weights - In Use
+$font-weight-normal:  	 	400;
+$font-weight-regular:  	 	400;
+$font-weight-medium:		500;
+$font-weight-semi-bold:		600;
+$font-weight-bold:		  	700;
+
+// Font Weights - Not In Use
+// $font-weight-thin:  		100;
+// $font-weight-extra-light:	200;
+// $font-weight-light:  	  	300;
+// $font-weight-extra-bold:	800;
+// $font-weight-black:  		900;
+
+// Breakpoints
+$xxs: 416px;
+$xs: 576px;
+$sm: 768px;
+$md: 1080px;
+$lg: 1200px;
+$xl: 1600px;
+
+// Wrapper/Container
+$wrapper-width: 1496px;
+$wrapper-thin-width: 1024px;
+$grid-gutter-width: 100px;
+$grid-gutter-width-sm: 60px;
+$grid-gutter-width-xs: 40px;
+
+$full-bleed-padding-left: calc( ((100vw - $wrapper-width) / 2) + $grid-gutter-width);
+$full-bleed-padding-right: calc( ((100vw - $wrapper-width) / 2) + $grid-gutter-width);
+
+// Sidebar
+$width-sidebar: 300px;
+
+// Navbar height
+$navbar-height-sm : 45px;
+$navbar-height-md : 60px;
+$navbar-height-lg : 101px;
+
+// Transition Speed
+$speed-fast : .3s;
+$speed-med  : .6s;
+$speed-slow : 1s;
+
+// Box Shadow
+$shadow : rgba($color-dark, .3) 0px 10px 30px -5px;
