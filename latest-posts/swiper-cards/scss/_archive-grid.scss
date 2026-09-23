@@ -1,0 +1,42 @@
+.archive-grid {
+	.item {
+		position: relative;
+		text-decoration: none;
+		color: $color-secondary-dark;
+		display: block;
+		&:hover, &:focus {
+			figure {
+				transform: scale(0.97);
+			}
+		}
+		figure {
+			transition: $speed-fast all ease-in-out;
+			border-radius: 10px;
+			overflow: hidden;
+			margin: 0 0 20px;
+			.placeholder {
+				padding-bottom: 64.94%;
+			}
+		}
+		
+		.tag {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			background-color: $white;
+			text-transform: uppercase;
+			font-size: 12px;
+			font-weight: bold;
+			font-family: $font-family-secondary;
+			letter-spacing: 0.3px;
+			line-height: 14px;
+			padding: 7px 11px;
+			border-radius: 50px;
+			color: $black;
+		}
+		.title {
+			margin: 0;
+			transition: $speed-fast all ease-in-out;
+		}
+	}
+}

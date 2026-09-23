@@ -1,0 +1,84 @@
+// ******************************
+// COMPONENT - featured-post-cards
+.component.featured-post-cards {
+	margin: 100px 0;
+	position: relative;
+	clear: both;
+	.wrapper {
+		max-width: 1304px;
+	}
+	.section-header {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		column-gap: 50px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		.content-wrapper {
+			max-width: 900px;
+		}
+		.button {
+			align-self: flex-start;
+			margin-top: 34px;
+		}
+		.header {
+			margin-bottom: 20px;
+		}
+	}
+	.slider {
+		position: relative;
+		margin: 40px 0 0;
+	}
+	.swiper {
+		position: static;
+		.swiper-slide {
+			height: auto;
+			align-self: stretch;
+		}
+		.swiper-pagination {
+			left: auto;
+			bottom: auto;
+			top: 125px;
+			transform: translateY(-50%);
+			right: 40px;
+			width: auto;
+			z-index: 200;
+		}
+	}
+	
+
+	@include media-max(1400px) {
+		.slider {
+			padding-right: 52px;
+		}
+		.swiper {
+			.swiper-pagination {
+				top: 8.93vw;
+			}
+		}
+	}
+	@include media-min($md) {
+		.swiper {
+			.swiper-buttons {
+				display: none;
+			}
+		}
+	}
+	@include media-max($md) {
+		margin: 70px 0;
+		.slider {
+			padding-right: 0;
+		}
+		.swiper {
+			.swiper-buttons {
+				display: flex;
+				column-gap: 25px;
+				margin: 0 0 20px;
+			}
+			.swiper-pagination {
+				display: none;
+			}
+		}
+	}
+}
