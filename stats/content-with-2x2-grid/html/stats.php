@@ -16,7 +16,7 @@ if( isset($items) && is_array($items) && count($items) > 0 ) {
 			<?= $button_html ?>
 		</div>
 		<div class="stats-wrapper">
-			<?php foreach($items as $index => $item) {
+			<?php foreach($items as $item) {
 				$stat = $item['stat'] ? '<div class="stat">'. $item['stat'] .'</div><hr>' : '';
 				$title = $item['description'] ? '<div class="description">'. $item['description'] .'</div>' : '';?>
 				<div class="item">

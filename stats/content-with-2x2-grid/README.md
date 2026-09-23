@@ -29,7 +29,6 @@ WordPress (Underscores-based custom theme) · PHP · Advanced Custom Fields Pro 
 
 - **Flex outside, grid inside.** The section is a flex row with two 50% columns, and the stats column is its own CSS grid, so the two halves can be sized and reflowed independently.
 - **Counts up once, on scroll.** A Waypoint fires the counter when each number enters the viewport, then destroys itself.
-- **Layout-stable numbers.** Each number's width is set to its final rendered width before it counts, so the layout doesn't shift while the digits change.
 - **Optional pieces.** The stat rule, the description and the button only render when they have content.
 - **Content-managed.** A small ACF group with a repeater for the stats.
 

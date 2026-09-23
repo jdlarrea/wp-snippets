@@ -7,7 +7,6 @@ $(document).ready(function(){
 	var $counters = $(".stat");
 	
 	$counters.each(function (ignore, counter) {
-		$(this).css('width', $(this).innerWidth());
 		var waypoint = new Waypoint( {
 			element: $(this),
 			handler: function() { 
