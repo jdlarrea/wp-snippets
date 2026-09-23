@@ -1,0 +1,169 @@
+.site-footer {
+	background-color: $gray-f0;
+	padding-top: 31px;
+	padding-bottom: 27px;
+	border-bottom: 7px solid $color-secondary;
+
+	// Outer wrapper
+	.wrapper {
+		display: flex;
+		column-gap: 40px;
+		max-width: 1521px;
+	}
+
+	// Logo
+	.logo-link-home-footer {
+		display: block;
+		width: 100%;
+		max-width: 301px;
+		max-height: 84px;
+		margin-right: auto;
+		transition: max-width $speed-fast;
+
+		.logo-img-footer {
+			max-height: 100%;
+		}
+	}
+
+	// Menus: general styling/reset
+	.footer-menu {
+		display: flex;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		a {
+			text-decoration: none;
+
+			&:hover {
+				color: $color-secondary;
+			}
+		}
+	}
+
+	// Right-side content
+	.content-wrapper {
+		display: flex;
+		flex-grow: 1;
+		flex-direction: column;
+		align-items: flex-end;
+		flex-shrink: 0;
+
+		.top {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+			column-gap: 50px;
+
+			.menu-footer-main {
+				column-gap: 40px;
+
+				> li {
+					> a {
+						font-size: 16px;
+						text-transform: uppercase;
+						font-weight: $font-weight-bold;
+						letter-spacing: ls(20);
+					}
+				}
+			}
+
+			.social-profiles {
+				display: flex;
+				column-gap: 26px;
+
+				a {
+					text-decoration: none;
+					font-size: 22px;
+
+					&:hover {
+						color: $color-secondary;
+					}
+				}
+			}
+		}
+
+		.copyright {
+			margin-bottom: 8px;
+			font-size: 13px;
+			font-weight: $font-weight-medium;
+		}
+	}
+
+	.menu-footer-copyright {
+		> li {
+			display: flex;
+			align-items: center;
+			line-height: 1;
+			font-size: 13px;
+			font-weight: $font-weight-medium;
+
+			&:after {
+				content: '|';
+				margin: 0 11px;
+			}
+
+			&:last-child {
+				&:after {
+					display: none;
+				}
+			}
+
+			> a {
+				&:hover {
+					color: $color-secondary;
+				}
+			}
+		}
+	}
+
+	@include media-max($sm) {
+		// Outer wrapper
+		.wrapper {
+			flex-direction: column;
+			row-gap: 30px;
+			align-items: center;
+		}
+
+		// Logo
+		.logo-link-home-footer {
+			display: block;
+			max-width: 250px;
+			margin-right: 0;
+		}
+
+		// Right-side content
+		.content-wrapper {
+			display: flex;
+			align-items: center;
+
+			.top {
+				flex-direction: column;
+				row-gap: 20px;
+
+				.menu-footer-main {
+					flex-wrap: wrap;
+					row-gap: 20px;
+				}
+
+				.social-profiles {
+					column-gap: 20px;
+					flex-wrap: wrap;
+					row-gap: 20px;
+				}
+			}
+
+			.copyright {
+				margin-bottom: 10px;
+				text-align: center;
+			}
+		}
+
+		.menu-footer-copyright {
+			flex-wrap: wrap;
+			row-gap: 15px;
+			justify-content: center;
+			text-align: center;
+		}
+	}
+}

@@ -43,4 +43,6 @@ This is an excerpt from a larger custom theme, trimmed to the pieces that make u
 - `_variables.scss` is trimmed to the colors this snippet uses, plus the full set of `$color-*` assignments to show how reusable colors are mapped (`// ... other colors`)
 - `acf-json/` contains only the footer-related fields of the theme's site-settings group
 
+For a simpler one-row footer, see [`single-row`](../single-row).
+
 Names have been neutralized (`acme_` prefix, `acme-site-settings` options page, "Acme" theme header).
