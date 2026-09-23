@@ -1,0 +1,98 @@
+// Variables
+
+// Colors
+$white:		#fff;
+$black:		#000;
+$red:		#d84a12;
+$green: 	#00cc66;
+$blue:		#17109e;
+$yellow:	#ffff00;
+$orange-200:	#e15a1f; // Button hover
+// ... other colors
+
+$color-secondary-200: $orange-200;
+
+$color-primary-200: #198ccf;
+$color-primary-300: #0082ca;
+// ... other colors
+
+$grid-gutter-width-sm: 25px;
+
+// Border radius
+$border-radius: 4px;
+
+$color-primary: $blue;
+// $color-primary-light: #00a0d2;
+// $color-primary-dark: #00a0d2;
+// $color-primary-highlight: #00a0d2;
+$color-secondary: $red;
+// $color-secondary-light: #dee4e9;
+// $color-secondary-dark: #333f48;
+$color-tertiary: $yellow;
+// $color-tertiary-light: #c5c5c5;
+// $color-tertiary-dark: #333f48;
+
+$color-light:	$white;
+$color-dark:	$black;
+
+$color-success:	$green;
+$color-info:	$blue;
+$color-warning:	$yellow;
+$color-danger:	$red;
+// ... other colors
+
+$dark-background: #f1f1f1;
+// ... other colors
+
+// Font Family
+$font-family-primary: 'Bariol', sans-serif;
+$font-family-secondary: 'Corbel', sans-serif;
+
+// Font Weights
+$font-weight-thin:  		100;
+//$font-weight-extra-light:	200;
+$font-weight-light:  	  	300;
+$font-weight-normal:  	 	400;
+$font-weight-medium:  		500;
+$font-weight-semi-bold:  	600;
+$font-weight-bold:		  	700;
+$font-weight-extra-bold:	800; //extra because header
+//$font-weight-black:  		900;
+
+// Breakpoints
+$xs: 501px;
+$sm: 576px; 
+$md: 768px; // tablet
+$lg: 1080px;
+$xl: 1317px;
+
+$header_font_size_xl: 42px;
+$header_font_size_lg: 34px;
+$header_font_size_md: 28px;
+$header_font_size_sm: 26px;
+
+// Wrapper/Container padding
+$grid-gutter-width: 50px;
+$grid-gutter-width-xs: 20px;
+
+// Sidebar
+$width-sidebar: 300px;
+
+// Navbar height
+$navbar-height-sm : 45px;
+$navbar-height-md : 90px;
+$navbar-height-lg :120px;
+
+// Max width of specific content
+$max-width-content : 1040px;
+$max-width-content-2 : 960px;
+
+// Transition Speed
+$speed-fast : .3s;
+$speed-med  : .6s;
+$speed-slow : 1s;
+
+// Box Shadow
+$shadow : rgba($color-dark, .3) 0px 10px 30px -5px;
+
+

@@ -1,0 +1,86 @@
+// Variables
+
+// Colors - Default
+$white:		#fff;
+$black:		#000;
+$red:		#cc0000;
+$green: 	#00cc66;
+$blue:		#0066cc;
+$yellow:	#ffff00;
+
+// Colors - Theme
+$blue_main: #00323E;
+$blue_alt: #00404F;
+$teal: #0C6770;
+$teal_alt: #085D65;
+// ... other colors
+$yellow_main: #F2D211;
+$yellow_alt: #ECBC1D;
+// ... other colors
+
+// Colors - Re-usable assingments
+$color-primary: $blue_main;
+$color-primary-alt: $blue_alt;
+$color-primary-light: $blue_alt;
+$color-primary-dark: $blue_main;
+
+$color-secondary: $yellow_main;
+$color-secondary-alt: $yellow_alt;
+$color-secondary-light: $yellow_main;
+$color-secondary-dark: $yellow_alt;
+
+$color-tertiary: $teal;
+$color-tertiary-alt: $teal_alt;
+$color-tertiary-light: $teal;
+$color-tertiary-dark: $teal_alt;
+
+$color-light:	$white;
+$color-dark:	$black;
+
+$color-success:	$green;
+$color-info:	$blue;
+$color-warning:	$yellow;
+$color-danger:	$red;
+
+// Font Family
+$font-family-primary: 'Open Sans', sans-serif;
+$font-family-secondary: 'Josefin Sans', sans-serif;
+
+// Font Weights - In Use
+$font-weight-thin:  		100;
+$font-weight-extra-light:	200;
+$font-weight-light:  	  	300;
+$font-weight-normal:  	 	400;
+$font-weight-regular:  	 	400;
+$font-weight-medium:  		500;
+$font-weight-semi-bold:  	600;
+$font-weight-bold:		  	700;
+$font-weight-extra-bold:	800;
+$font-weight-black:  		900;
+
+// Breakpoints
+$xs: 480px;
+$sm: 768px;
+$md: 1040px;
+$lg: 1304px;
+$xl: 1680px;
+
+// Wrapper/Container padding
+$grid-gutter-width: 40px;
+$grid-gutter-width-xs: 20px;
+
+// Sidebar
+$width-sidebar: 300px;
+
+// Navbar height
+$navbar-height-sm : 50px;
+$navbar-height-md : 100px;
+$navbar-height-lg : 150px;
+
+// Transition Speed
+$speed-fast : .3s;
+$speed-med  : .6s;
+$speed-slow : 1s;
+
+// Box Shadow
+$shadow : rgba($color-dark, .3) 0px 10px 30px -5px;

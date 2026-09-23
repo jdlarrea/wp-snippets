@@ -1,0 +1,159 @@
+
+// ****************************************
+// Component Variables
+// - adjust these however needed to match global colors/breakpoints/font styling/etc.
+$breakpoint_lg: 'max-width: 991px';
+$breakpoint_md: 'max-width: 767px';
+$breakpoint_sm: 'max-width: 575px';
+$dot_background: #bfbfbf;
+$dot_background_active: #0c76eb;
+$dot_background_hover: $color-primary;
+
+// ****************************************
+// COMPONENT - LOGO SLIDER - 103
+// ****************************************
+.component-logo-slider-container {
+	padding: 70px 0;
+	background-color: $dark-background;
+	.component-logo-slider-wrapper {
+		.header-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			margin-bottom: 20px;
+
+			.header {
+				color: $color-primary;
+				font-size: $header_font_size_xl;
+				margin-right: 24px;
+				font-family: $font-family-primary;
+				letter-spacing: ls(-10);
+			}
+			
+			.text {
+				width: 100%;
+				margin-top: 10px;
+
+                a:not(.button) {
+                    color: #17109e;
+                    text-decoration: underline;
+                    &:hover, &:focus {
+                        color: #eb6d24;
+                    }
+                }
+			}
+		}
+
+		.slider-logos {
+			margin: 0 -20px;
+
+			.logo-slide {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 20px;
+
+				img {
+					max-height: 100px;
+				}
+			}
+		}
+	}
+
+	@media screen and ( $breakpoint_lg ) {
+		
+		.component-logo-slider-wrapper {
+			.header-wrapper {
+				.header {
+					font-size: $header_font_size_lg;
+				}
+			}
+		}
+		
+	}
+
+
+	@media screen and ( $breakpoint_md ) {
+		
+		.component-logo-slider-wrapper {
+			.header-wrapper {
+				.header {
+					font-size: $header_font_size_md;
+				}
+			}
+		}
+		
+	}
+
+	@media screen and ( $breakpoint_sm ) {
+		
+		.component-logo-slider-wrapper {
+			.header-wrapper {
+				.header {
+					font-size: $header_font_size_sm;
+				}
+			}
+		}
+		
+	}
+}
+
+// Slick Overrides
+.component-logo-slider-container {
+	.slick-dots-wrapper {
+		ul {
+			display: flex;
+			margin: 0;
+			padding: 0;
+			
+			li {
+				list-style: none;
+				margin: 0;
+				margin-right: 10px;
+				padding: 0;
+				line-height: 0;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				&.slick-active {
+					.slick-custom-dot {
+						background-color: $dot_background_active;
+					}
+				}
+
+				.slick-custom-dot {
+					width: 10px;
+					height: 10px;
+					margin: 0;
+					padding: 0;
+					border-radius: 100%;
+					border: none;
+					background-color: $dot_background;
+					cursor: pointer;
+
+					&:hover,
+					&:focus {
+						background-color: $dot_background_hover;
+					}
+				}
+
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.component-logo-slider-wrapper {
+		.slider-logos {
+			.slick-list {
+				.slick-track {
+					display: flex;
+					align-items: center;
+				}
+			}
+		}
+	}
+}
