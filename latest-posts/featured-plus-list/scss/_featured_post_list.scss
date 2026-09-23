@@ -1,0 +1,273 @@
+// ******************************
+// COMPONENT - featured-post-list
+.featured-posts-list {
+	.header {
+		margin-bottom: 48px;
+	}
+
+	.posts-wrapper {
+		display: flex;
+		column-gap: 112px;
+		padding-bottom: 87px;
+		border-bottom: 1px solid rgba( #0d1c41, 0.1 );
+	}
+
+	.left-post {
+		width: 39.5%;
+		flex-shrink: 0;
+	
+		&:hover {
+			.post-info {
+				&:after {
+					opacity: 1;
+					transform: translate(0, -50%);
+				}
+			}
+		}
+
+		&:after {
+			display: none !important;
+		}
+
+		.acme-figure {
+			.placeholder {
+				padding-bottom: 52.5%;
+			}
+		}
+
+		.post-info {
+			position: relative;
+			margin-top: 41px;
+			padding: 0 80px 0 23px;
+
+			&:after {
+				content: '\e909';
+				font-family: 'acme-icons' !important;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				display: flex;
+				width: 53px;
+				height: 53px;
+				flex-shrink: 0;
+				@include flex-center;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				opacity: 0;
+				transform: translate(-5px, -50%);
+				border-radius: 50%;
+				background-color: $green_00;
+				color: $white;
+				transition: opacity $speed-fast, transform $speed-fast;
+			}
+		}
+	}
+
+	.right-posts {
+		margin-top: -30px;
+		margin-bottom: -30px;
+
+		.post-link {
+			padding: 30px 80px 30px 34px;
+			border-bottom: 1px solid rgba( #0d1c41, 0.1 );
+
+			&:last-child {
+				margin-bottom: 0;
+				border-bottom: none;
+			}
+		}
+	}
+
+	.post-link {
+		display: block;
+		font-family: $font-family-secondary;
+		font-weight: $font-weight-bold;
+		line-height: 1.3;
+		text-decoration: none;
+		color: $black_25;
+		position: relative;
+
+		&:hover {
+			&:after {
+				opacity: 1;
+				transform: translate(0, -50%);
+			}
+		}
+
+		&:after {
+			content: '\e909';
+			font-family: 'acme-icons' !important;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			display: flex;
+			width: 53px;
+			height: 53px;
+			flex-shrink: 0;
+			@include flex-center;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			opacity: 0;
+			transform: translate(-5px, -50%);
+			border-radius: 50%;
+			background-color: $green_00;
+			color: $white;
+			transition: opacity $speed-fast, transform $speed-fast;
+		}
+
+		.post-meta {
+			display: flex;
+			margin-bottom: 18px;
+			flex-wrap: wrap;
+			align-items: center;
+			font-size: 14px;
+			font-weight: $font-weight-semi-bold;
+			text-transform: uppercase;
+
+			.term {
+				margin-right: 17px;
+				padding: 5px 12px;
+				background-color: #EFF2F6;
+			}
+
+			.date {
+				color: rgba( $gray_59, 0.7);
+			}
+		}
+
+		.title {
+			font-size: 30px;
+		}
+	}
+
+	@include media-max($xxl) {
+		.header {
+			margin-bottom: 40px;
+		}
+	
+		.posts-wrapper {
+			column-gap: 80px;
+			padding-bottom: 60px;
+		}
+
+		.left-post {
+			.post-info {
+				padding: 0 60px 0 15px;
+
+				&:after {
+					width: 35px;
+					height: 35px;
+				}
+			}
+		}
+
+		.right-posts {
+			.post-link {
+				padding: 30px 60px 30px 34px;
+			}
+		}
+
+		.post-link {
+			&:after {
+				width: 35px;
+				height: 35px;
+			}
+
+			.post-meta {
+				.term {
+					margin-right: 15px;
+				}
+			}
+	
+			.title {
+				font-size: 24px;
+			}
+		}
+	}
+
+	@include media-max($xl) {
+		.posts-wrapper {
+			column-gap: 40px;
+		}
+
+		.left-post {
+			width: 44%;
+		}
+	}
+
+	@include media-max($lg) {
+		.posts-wrapper {
+			padding-bottom: 40px;
+		}
+
+		.left-post {
+			.post-info {
+				margin-top: 25px;
+				padding: 0 40px 0 15px;
+
+				&:after {
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+
+		.right-posts {
+			.post-link {
+				padding: 20px 40px 20px 15px;
+			}
+		}
+
+		.post-link {
+			&:after {
+				width: 30px;
+				height: 30px;
+			}
+
+			.post-meta {
+				font-size: 12px;
+			}
+
+			.title {
+				font-size: 20px;
+			}
+		}
+	}
+
+	@include media-max($sm) {
+		.posts-wrapper {
+			flex-direction: column;
+			padding-bottom: 40px;
+		}
+
+		.left-post {
+			width: 100%;
+			border-bottom: 1px solid rgba( #0d1c41, 0.1 );
+
+			.acme-figure {
+				display: none;
+			}
+
+			.post-info {
+				margin-top: 0;
+				padding: 20px 40px 20px 0;
+			}
+		}
+
+		.right-posts {
+			margin-top: 0;
+
+			.post-link {
+				padding: 20px 40px 20px 0;
+			}
+		}
+
+		.post-link {
+			.title {
+				font-size: 18px;
+			}
+		}
+	}
+}
