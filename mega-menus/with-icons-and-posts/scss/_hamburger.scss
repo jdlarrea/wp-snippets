@@ -1,0 +1,58 @@
+.nav-toggle {
+	display: none;
+	width: 33px;
+	height: 21px;
+	position: absolute;
+	bottom: 30px;
+	right: $grid-gutter-width-xl;
+	z-index: 100;
+	border: none;
+	background-color: transparent;
+	appearance: none;
+	transform: translateY(50%);
+	cursor: pointer;
+	outline: none;
+	transition-duration: $speed-fast;
+
+	i,
+	i:before,
+	i:after {
+		transition-duration: $speed-fast;
+		position: absolute;
+		height: 3px;
+		width: 33px;
+		top: 9px;
+		left: 0;
+		background-color: $white;
+	}
+
+	i:before {
+		content: '';
+		top: -9px;
+	}
+
+	i:after {
+		content: '';
+		top: 9px;
+	}
+
+	.nav-on & {
+		i {
+			background: transparent;
+		}
+		i:before {
+			transform: rotateZ(45deg) translate(6.5px, 6.5px);
+		}
+		i:after {
+				transform: rotateZ(-45deg) translate(6.5px, -6.5px);
+			}
+	}
+
+	@include media-max($lg) {
+		display: block;
+	}
+
+	@include media-max($xs) {
+		right: $grid-gutter-width-xs;
+	}
+}
