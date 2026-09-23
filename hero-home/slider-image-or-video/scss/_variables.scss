@@ -1,0 +1,117 @@
+// **********
+// Colors - Default
+$white:		#fff;
+$black:		#000;
+$red:		#cc0000;
+$green: 	#00cc66;
+$blue:		#0066cc;
+$yellow:	#ffff00;
+
+// **********
+// Colors - Delete
+// ... other colors
+$orange_d1: #D18147;
+// ... other colors
+
+// **********
+// Colors - Theme
+$blue_0b: #0B3B6D;
+$blue_4e: #4E76A6;
+// ... other colors
+$orange_f1: #F19600;
+// ... other colors
+
+// **********
+// Colors - RGBA shades
+// ... other colors
+$off-blue-0b-87: rgba( $blue_0b, 0.87 );
+// ... other colors
+
+// **********
+// Colors - Re-usable assingments
+$color-success:	$green;
+$color-info:	$blue;
+$color-warning:	$yellow;
+$color-danger:	$red;
+
+$color-light:	$white;
+$color-dark:	$black;
+
+$color-primary: $blue_0b;
+$color-primary-light: $blue_4e;
+$color-primary-dark: $blue_0b;
+
+$color-secondary: $orange_f1;
+$color-secondary-light: $orange_f1;
+$color-secondary-dark: $orange_f1;
+
+$color-tertiary: $orange_d1;
+$color-tertiary-dark: $orange_d1;
+
+// **********
+// Font Family
+$font-family-primary: 'Roboto', sans-serif;
+$font-family-secondary: 'Roboto Condensed', sans-serif;
+
+
+// **********
+// Font Weights - In Use
+$font-weight-light:  	  	300;
+$font-weight-regular:  	 	400;
+$font-weight-medium:  		500;
+$font-weight-semi-bold:  	600;
+$font-weight-bold:		  	700;
+$font-weight-extra-bold:	800;
+
+
+// **********
+// Font Weights - Not In Use
+// $font-weight-thin:  		100;
+// $font-weight-extra-light:	200;
+// $font-weight-black:  		900;
+
+
+// **********
+// Transition Speed
+$speed-fast : .3s;
+$speed-med  : .6s;
+$speed-slow : 1s;
+
+
+// **********
+// Breakpoints
+$xxs: 375px;
+$xs: 567px;
+$sm: 768px;
+$md: 1080px;
+$lg: 1200px;
+$xl: 1400px;
+$xxl: 1600px;
+$xxxl: 1680px;
+
+
+// **********
+// Wrapper/Container padding
+// Section spacing (above/below components)
+$grid-gutter-width: 80px;
+$grid-gutter-width-lg: 60px;
+$grid-gutter-width-xs: 20px;
+
+$section_spacing_desktop: 100px;
+$section_spacing_lg: 80px;
+$section_spacing_xs: 60px;
+
+
+// ****************************************
+// NAVBAR HEIGHTS
+// navbar - desktop
+$navbar-height-desktop: 180px;
+$navbar-height-desktop-sticky: 100px;
+
+// navbar - mobile
+$navbar-height-mobile: 100px;
+$navbar-height-mobile-sticky: 80px;
+
+// navbar - mobile slideouts
+$mobile-menu-pane-width: 400px;
+$mobile-menu-pane-width-xs: 100%;

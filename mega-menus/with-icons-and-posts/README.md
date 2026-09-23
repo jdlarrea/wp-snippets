@@ -45,6 +45,7 @@ This is an excerpt from a larger custom theme, trimmed to the pieces that make u
 - jQuery, GSAP and ScrollTrigger loaded by the theme
 - The theme's own `Helpers\Templates` class (used to render the CTA button) and the ACF field group that defines that button
 - The rest of the SCSS partials listed in `style.scss` (`// ... other imports`), plus the alert bar styles
+- `_variables.scss` is trimmed to the colors this snippet uses, plus the full set of `$color-*` assignments to show how reusable colors are mapped (`// ... other colors`)
 - Theme options fields (logo, header CTA, alert bar, placeholder image)
 
 Names have been neutralized (`acme_` prefix, "Acme" theme header).

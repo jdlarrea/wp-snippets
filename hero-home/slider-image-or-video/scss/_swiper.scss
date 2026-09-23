@@ -1,0 +1,72 @@
+// ****************************************
+// SWIPER - general
+.swiper-slide {
+	display: flex;
+	height: auto;
+	align-self: stretch;
+	flex-direction: column;
+}
+
+.acme-swiper-navigation {
+	display: flex;
+	column-gap: 17px;
+	flex-shrink: 0;
+
+	.acme-nav {
+		cursor: pointer;
+		line-height: 1;
+
+		&:hover,
+		&:focus {
+			i {
+				color: $color-primary-light;
+			}
+		}
+	}
+}
+
+.acme-swiper-pagination {
+	display: flex;
+	column-gap: 31px;
+	row-gap: 31px;
+
+	&.dark {
+		.swiper-pagination-bullet {
+			border-color: $color-primary;
+
+			&.swiper-pagination-bullet-active {
+				background-color: $color-primary;
+			}
+		}
+	}
+
+	.swiper-pagination-bullet {
+		width: 14px;
+		height: 14px;
+		margin: 0 !important;
+		background: none;
+		border: 2px solid $white;
+		opacity: 1;
+
+		&.swiper-pagination-bullet-active {
+			background-color: $white;
+		}
+	}
+
+	@include media-max($lg) {
+		column-gap: 25px;
+		row-gap: 25px;
+
+		.swiper-pagination-bullet {
+			width: 12px;
+			height: 12px;
+		}
+	}
+}
+
+div#content:has(.hero-home) {
+	padding-top: 0;
+	@include media-min(1300px) {
+		padding-top: 0;
+	}
+}
