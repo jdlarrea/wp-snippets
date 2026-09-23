@@ -1,0 +1,51 @@
+.nav-toggle {
+	width: 28px;
+	height: 28px;
+	z-index: 100;
+	cursor: pointer;
+	outline: none;
+	transition-duration: $speed-fast;
+	position: relative;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: $grid-gutter-width;
+
+	i,
+	i:before,
+	i:after {
+		transition-duration: $speed-fast;
+		position: absolute;
+		height: 3px;
+		width: 28px;
+		top: 12px;
+		left: 0;
+		background-color: $white;
+	}
+
+	i:before {
+		content: '';
+		top: -7px;
+	}
+
+	i:after {
+		content: '';
+		top: 7px;
+	}
+
+	.nav-on-mobile & {
+		i {
+			background: transparent;
+		}
+		i:before {
+			transform: rotateZ(45deg) translate(5px, 5px);
+		}
+		i:after {
+				transform: rotateZ(-45deg) translate(5px, -5px);
+			}
+	}
+
+	@include media-min($lg) {
+		display: none;
+	}
+}

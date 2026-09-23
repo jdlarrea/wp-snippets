@@ -1,0 +1,92 @@
+// Variables
+
+// Colors - Default
+$white:			#fff;
+$black:			#000;
+$red:			#f6002e;
+$green: 		#00f651;
+$blue:			#5AC8FE;
+$blue-dark: 	#274383;
+$orange:		#F69400;
+$yellow:		#f6ed00;
+$purple:		#8544B8;
+// ... other colors
+$gray_f1:		#F1F4F7;
+$gray_f4:		#F4F7FD;
+// ... other colors
+$purple_10:		#102C72;
+$purple_85:		#8545B8;
+$purple_4d:		#4D358C;
+$blue_13:		#132D74;
+
+$gray-100 : #F4F0EE;
+$gray-200 : #EFF3F8;
+// ... other colors
+$gray-400 : #666F85;
+$gray-500 : #0A2560;
+
+// Colors - Re-usable assingments
+$color-primary: $orange;
+$color-primary-light: lighten($color-primary, 20%);
+$color-primary-dark: darken($color-primary, 20%);
+
+$color-secondary: $blue;
+$color-secondary-light: lighten($color-secondary, 20%);
+$color-secondary-dark: $blue-dark;
+
+$color-tertiary: $gray-500;
+$color-tertiary-light: $gray-400;
+$color-tertiary-dark: darken($color-tertiary, 20%);
+
+$color-light:	$white;
+$color-dark:	$black;
+
+$color-success:	$green;
+$color-info:	$blue;
+$color-warning:	$yellow;
+$color-danger:	$red;
+
+// Font Familyfont-family: 
+$font-family-primary: 'Mulish', sans-serif;
+$font-family-secondary: 'Fira Sans', sans-serif;
+
+// Font Weights
+$font-weight-light:  	  	300;
+$font-weight-normal:  	 	400;
+$font-weight-regular:  	 	400;
+$font-weight-medium:		500;
+$font-weight-semi-bold:  	600;
+$font-weight-bold:		  	700;
+$font-weight-extra-bold:	800;
+$font-weight-black:		  	900;
+$font-weight-extra-black:	1000;
+
+
+// Breakpoints
+$xxs: 375px;
+$xs: 580px;
+$sm: 780px;
+$md: 1080px;
+$lg: 1280px;
+$xl: 1500px;
+$xxl: 1770px;
+
+// Wrapper/Container padding
+$grid-gutter-width: 30px;
+$grid-gutter-width-xs: 20px;
+
+// Sidebar
+$width-sidebar: 300px;
+
+// Navbar height
+$navbar-height : 108px;
+$sticky-navbar-height : 108px;
+$navbar-height-xs : 78px;
+
+// Transition Speed
+$speed-fast : .3s;
+$speed-med  : .6s;
+$speed-slow : 1s;
+
+// Box Shadow
+$shadow : rgba($color-dark, .3) 0px 10px 30px -5px;
