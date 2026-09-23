@@ -37,6 +37,18 @@ Most of these come from custom themes built on the [Underscores](https://undersc
 | [`swiper-cards`](latest-posts/swiper-cards) | Post-card slider with editor-chosen query modes (latest, by category or tag, hand-picked) | `WP_Query`, ACF, Swiper |
 | [`featured-plus-list`](latest-posts/featured-plus-list) | One large featured post beside a list of the next few, with the same query modes | `WP_Query`, ACF, CSS only |
 
+### Accordions
+
+| Snippet | What it shows | Built with |
+|---|---|---|
+| [`accessible-dl`](accordions/accessible-dl) | Keyboard- and ARIA-friendly accordion on a definition list, one panel open at a time | jQuery, ACF repeater |
+
+### CTA banners
+
+| Snippet | What it shows | Built with |
+|---|---|---|
+| [`offer-slider`](cta-banners/offer-slider) | Image slider and content card, linked to each other, fed from a custom Offer post type | `WP_Query`, Swiper `controller`, ACF |
+
 ### Stats
 
 | Snippet | What it shows | Built with |

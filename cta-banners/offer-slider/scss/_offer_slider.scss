@@ -1,0 +1,271 @@
+// ******************************
+// COMPONENT - offer-slider
+.component.offer-slider {
+	width: 100%;
+	margin: 0;
+	padding-top: 70px;
+	padding-bottom: 70px;
+
+	&.theme-dark {
+		background-color: $color-primary;
+
+		.swiper-container-contents {
+			background-color: $white;
+
+			.swiper-offer-contents {
+				.eyebrow.hdr-accent:before { color: $color-primary; }
+
+				.header { color: $color-primary; }
+
+				.button {
+					background-color: $color-primary;
+					color: $white;
+
+					&:before {
+						background-image: url('./assets/img/end-chev-dark.png');
+					}
+				}
+			}
+		}
+	}
+
+	&.align-left {
+		.swiper-offer-images {
+			right: 0;
+		}
+	}
+
+	&.align-right {
+		.swiper-offer-images {
+			left: 0;
+		}
+
+		&.theme-light {
+			.swiper-container-contents {
+				background-color: $color-quaternary;
+			}
+		}
+
+		.swiper-container-contents {
+			margin-left: auto;
+		}
+	}
+
+	.swiper-offer-images {
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		z-index: 0;
+
+		.swiper-slide {
+			.play-link {
+				display: flex;
+				width: 148px;
+				height: 148px;
+				@include flex-center;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				z-index: 3;
+				border-radius: 100%;
+				background-color: $off-white-90;
+				color: $color-primary;
+				text-decoration: none;
+				transform: translate(-50%, -50%);
+
+				&:hover {
+					background-color: $white;
+				}
+
+				i {
+					position: relative;
+					font-size: 80px;
+					left: .1em;
+				}
+			}
+		}
+	}
+
+	.swiper-container-contents {
+		display: flex;
+		width: 61.25%;
+		min-height: 500px;
+		padding: 58px 76px 76px;
+		background-color: $color-tertiary;
+		position: relative;
+		border-radius: 20px;
+
+		.acme-swiper-pagination {
+			width: 30%;
+			position: absolute;
+			top: 58px;
+			right: 65px;
+			left: auto;
+			z-index: 3;
+			justify-content: flex-end;
+			align-self: flex-start;
+		}
+
+		.swiper-offer-contents {
+			align-self: stretch;
+
+			.swiper-slide {
+				justify-content: flex-end;
+			}
+
+			.eyebrow {
+				width: 56%;
+				margin-bottom: auto;
+
+				&.hdr-accent:before {
+					color: $white;
+				}
+			}
+
+			.header {
+				margin: 20px 0 0;
+			}
+
+			.description {
+				margin-top: 20px;
+				font-weight: $font-weight-medium;
+			}
+
+			.button {
+				margin-top: 38px;
+			}
+		}
+	}
+
+	@include media-max($xl) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+
+		.swiper-offer-images {
+			.swiper-slide {
+				.play-link {
+					width: 80px;
+					height: 80px;
+
+					i {
+						font-size: 40px;
+					}
+				}
+			}
+		}
+
+		.swiper-container-contents {
+			width: 58%;
+			min-height: 480px;
+			padding: 50px 60px 60px;
+
+			.acme-swiper-pagination {
+				top: 50px;
+				right: 60px;
+			}
+		}
+	}
+
+	@include media-max($md) {
+		.swiper-offer-images {
+			.swiper-slide {
+				.play-link {
+					width: 60px;
+					height: 60px;
+
+					i {
+						font-size: 30px;
+					}
+				}
+			}
+		}
+
+		.swiper-container-contents {
+			display: flex;
+			width: 58%;
+			min-height: 450px;
+			padding: 50px 60px 60px;
+
+			.acme-swiper-pagination {
+				top: 50px;
+				right: 60px;
+			}
+
+			.swiper-offer-contents {
+				.eyebrow {
+					font-size: 14px;
+				}
+
+				.header {
+					font-size: 1.33em;
+				}
+
+				.description {
+					font-size: .9em;
+				}
+			}
+		}
+	}
+
+	@include media-max($sm) {
+		padding-top: 0;
+
+		.swiper-offer-images {
+			width: 100%;
+			height: 60vw;
+			position: relative;
+
+			.swiper-slide {
+				.play-link {
+					width: 60px;
+					height: 60px;
+
+					i {
+						font-size: 30px;
+					}
+				}
+			}
+		}
+
+		.swiper-container-contents {
+			display: flex;
+			width: 100%;
+			min-height: 400px;
+			margin-top: -40px;
+		}
+	}
+
+	@include media-max($xs) {
+		.swiper-offer-images {
+			height: 65vw;
+
+			.swiper-slide {
+				.play-link {
+					width: 50px;
+					height: 50px;
+
+					i {
+						font-size: 25px;
+					}
+				}
+			}
+		}
+
+		.swiper-container-contents {
+			min-height: 375px;
+			padding: 40px 30px;
+
+			.acme-swiper-pagination {
+				top: 40px;
+				right: 40px;
+			}
+
+			.swiper-offer-contents {
+				.eyebrow {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}

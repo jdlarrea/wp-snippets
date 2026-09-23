@@ -1,0 +1,44 @@
+// ****************************************
+// SWIPER - general
+.swiper-slide {
+	display: flex;
+	height: auto;
+	align-self: stretch;
+	flex-direction: column;
+}
+
+.acme-swiper-pagination {
+	display: flex;
+	column-gap: 15px;
+	row-gap: 20px;
+
+	.swiper-pagination-bullet {
+		width: 15px;
+		height: 15px;
+		margin: 0 !important;
+		opacity: 1;
+		border-radius: 3px;
+		border: 2px solid $color-primary;
+		background-color: transparent;
+		transition: background-color $speed-fast;
+
+		&.swiper-pagination-bullet-active {
+			background-color: $color-primary;
+		}
+
+		&:hover {
+			background-color: $color-primary;
+		}
+	}
+
+	@include media-max($sm) {
+		column-gap: 10px;
+		row-gap: 15px;
+
+		.swiper-pagination-bullet {
+			border-width: 1px;
+			width: 12px;
+			height: 12px;
+		}
+	}
+}

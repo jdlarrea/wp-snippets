@@ -1,0 +1,57 @@
+// ******************************
+// COMPONENT - accordion
+.component.accordion {
+	.content-body {
+		margin-bottom: 45px;
+	}
+
+	dl {
+		margin: 0;
+		padding: 0;
+
+		dt {
+			display: flex;
+			justify-content: space-between;
+			padding: 21px 8px 10px 0;
+			margin: 33px 0 0;
+			column-gap: 30px;
+			align-items: center;
+			cursor: pointer;
+			transition: all 0.5s ease-in-out;
+			border-top: 2px solid $color-primary-light;
+
+			i {
+				font-size: 1.7em;
+				line-height: 0;
+				color: $color-tertiary;
+				transition: $speed-fast ease-in-out all;
+			}
+
+			&:hover,
+			&:focus {
+				color: $color-secondary;
+			}
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&.on {
+				i {
+					transform: rotate(90deg);
+				}
+			}
+		}
+
+		dd {
+			margin: 5px 0 40px;
+			padding: 0 40px 0 0;
+			display: none;
+			position: relative;
+
+			.button {
+				margin-top: 20px;
+			}
+		}
+	}
+}
