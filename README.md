@@ -45,6 +45,13 @@ Most of these come from custom themes built on the [Underscores](https://undersc
 | [`swiper-synced-avatars`](testimonials/swiper-synced-avatars) | Photo strip synced to a crossfading quote slider, with global or per-page content | Swiper `thumbs`, ACF options |
 | [`slick-manual-or-cpt`](testimonials/slick-manual-or-cpt) | Carousel filled by hand or from a Testimonial post type, with recolorable SVG logos | Slick, custom post type, ACF |
 
+### Timelines
+
+| Snippet | What it shows | Built with |
+|---|---|---|
+| [`gsap-pinned-scrub`](timelines/gsap-pinned-scrub) | Pinned, scroll-scrubbed history timeline with snapping years, crossfading images and a custom post type | GSAP ScrollTrigger, `matchMedia`, ACF |
+| [`slick-synced-nav`](timelines/slick-synced-nav) | Click-through timeline with angled tabs synced to a content carousel and nested image sliders | Slick `asNavFor`, ACF repeaters |
+
 ### Footers
 
 | Snippet | What it shows | Built with |

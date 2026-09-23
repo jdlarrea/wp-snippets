@@ -1,0 +1,259 @@
+.timeline {
+	h2, .h2 {
+		line-height: 42px;
+		font-size: 46px;
+		font-weight: 800;
+		text-transform: uppercase;
+		margin: 0 0 30px;
+	}
+
+	.timeline-nav-container {
+		overflow: hidden;
+		position: relative;
+	}
+
+	.timeline-nav {
+		width: 100%;
+		margin-bottom: 3px;
+		position: relative;
+
+		.slick-list {
+			overflow: visible;
+		}
+
+		.slick-track {
+			display: flex !important;
+		}
+
+		.slick-arrow {
+			position: absolute;
+			bottom: 0;
+			height: 100%;
+			font-size: 20px;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transform: translateY(-50%);
+			width: 40px;
+
+			&:hover, &:focus {
+				color: $white;
+			}
+
+			&.slick-disabled {
+				opacity: 0;
+			}
+
+			&.icon-chevron-left {
+				left: 0;
+			}
+
+			&.icon-chevron-right {
+				right: 0;
+			}
+		}
+
+		.item {
+			clip-path: polygon(20px 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+			padding: 10px 20px;
+			margin-right: -16px;
+			background-color: $green;
+			text-align: center;
+			font-size: 14px;
+			font-weight: bold;
+			font-family: $font-family-secondary;
+			letter-spacing: ls(25);
+			line-height: 19px;
+			color: $white;
+			min-height: 58px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			cursor: pointer;
+			transition: $speed-fast all ease-in-out;
+
+			&:first-child {
+				clip-path: polygon(0% 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+			}
+
+			&:last-child {
+				clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);
+			}
+
+			&.slick-current {
+				background-color: #097E00;
+			}
+		}
+	}
+
+	.timeline-carousel {
+		.slick-track {
+			display: flex !important;
+		}
+
+		.slick-slide {
+			height: auto;
+		}
+
+		.item {
+			display: flex;
+			background-color: $gray_e8;
+
+			aside {
+				padding: 50px 40px 40px 80px;
+				flex: 1 1 auto;
+				min-width: 50%;
+
+				.wysiwyg-columns {
+					margin: 0;
+					row-gap: 0;
+
+					p {
+						margin-bottom: 12px;
+					}
+				}
+			}
+		}
+	}
+
+	.slides-container {
+		min-width: 50%;
+		min-height: 0;
+	}
+
+	.slides {
+		min-height: 100%;
+
+		.slick-track {
+			display: flex !important;
+		}
+
+		.slick-slide {
+			height: auto;
+		}
+
+		.slick-slide {
+			min-height: 100%;
+
+			figure {
+				position: relative;
+				min-height: 100%;
+				height: 100%;
+				aspect-ratio: 718 / 539;
+
+				figcaption {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					z-index: 200;
+					display: flex;
+					column-gap: 45px;
+					background-color: rgba($black, 0.85);
+					color: $white;
+					width: 90%;
+					max-width: 614px;
+					font-size: 16px;
+					font-family: $font-family-secondary;
+					padding: 20px 40px 20px 50px;
+					align-items: center;
+					clip-path: polygon(25px 0, 100% 0, 100% 100%, 0% 100%);
+					justify-content: space-between;
+
+					.title {
+						font-weight: bold;
+					}
+
+					.arrows {
+						position: relative;
+						display: flex;
+						column-gap: 24px;
+						align-items: center;
+						z-index: 200;
+						height: 24px;
+						.slick-prev,
+
+						.slick-next {
+							font-size: 24px;
+							position: static;
+							transform: translateY(0);
+							color: #898989;
+
+							&:hover, &:focus {
+								color: $white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include media-max($lg) {
+		.timeline-carousel {
+			.item {
+				aside {
+					padding: 40px;
+				}
+			}
+		}
+
+		.slides {
+			.slick-slide {
+				figure {
+					figcaption {
+						padding: 20px 20px 20px 40px;
+					}
+				}
+			}
+		}
+	}
+
+	@include media-max($md) {
+		.timeline-carousel {
+			.item {
+				display: flex;
+				background-color: $gray_e8;
+				flex-direction: column;
+			}
+		}
+	}
+
+	@include media-max($sm) {
+		header {
+			h2, .h2 {
+				font-size: 40px;
+				line-height: 0.9;
+			}
+		}
+	}
+
+	@include media-max($xs) {
+		.slides {
+			.slick-slide {
+				height: 100%;
+
+				figure {
+					aspect-ratio: initial;
+
+					.display {
+						position: static;
+
+						img {
+							position: static;
+						}
+					}
+
+					figcaption {
+						background-color: $black;
+						position: static;
+						width: 100%;
+						padding: 20px;
+						clip-path: none;
+					}
+				}
+			}
+		}
+	}
+}

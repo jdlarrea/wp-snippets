@@ -1,0 +1,80 @@
+// Variables
+
+// Colors - Default
+$white:			#fff;
+$black:			#000;
+$dark:			#000;
+$light:			#ffffff;
+$red:			#F04923;
+$green:			#49A942;
+$blue:			#015DE4;
+// ... other colors
+$yellow:		#FFB300;
+
+$gray_e8:       #E8E6E1;
+// ... other colors
+
+// Colors - Re-usable assingments
+$color-primary: $blue;
+
+$color-secondary: $red;
+
+$color-tertiary: $green;
+
+$color-light:	$light;
+$color-dark:	$dark;
+
+$color-success:	$green;
+$color-info:	$blue;
+$color-warning:	$yellow;
+$color-danger:	$red;
+
+// Font Family
+$font-family-primary: 'Segoe UI', sans-serif;
+$font-family-secondary: 'Segoe UI';
+
+// Font Weights - In Use
+$font-weight-normal:  	 	400;
+$font-weight-regular:  	 	400;
+$font-weight-medium:  		500;
+$font-weight-bold:		  	700;
+$font-weight-extra-bold:	800;
+$font-weight-black:  		900;
+
+// Font Weights - Not In Use
+// $font-weight-thin:  		100;
+// $font-weight-extra-light:	200;
+// $font-weight-light:  	  	300;
+// $font-weight-medium:  		500;
+// $font-weight-semi-bold:  	600;
+// $font-weight-extra-bold:	800;
+// $font-weight-black:  		900;
+
+// Breakpoints
+$xxs: 375px;
+$xs: 576px;
+$sm: 768px;
+$md: 1080px;
+$lg: 1280px;
+$xl: 1540px;
+$xxl: 1840px;
+
+// Wrapper/Container padding
+$grid-gutter-width: 40px;
+$grid-gutter-width-xs: 25px;
+
+// Sidebar
+$width-sidebar: 300px;
+
+// Navbar height
+$navbar-height : 93px;
+$sticky-navbar-height : 93px;
+$navbar-height-lg : 66px;
+
+// Transition Speed
+$speed-fast : .3s;
+$speed-med  : .6s;
+$speed-slow : 1s;
+
+// Box Shadow
+$shadow : rgba($color-dark, .3) 0px 10px 30px -5px;
