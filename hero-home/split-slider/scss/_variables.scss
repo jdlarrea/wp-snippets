@@ -1,0 +1,75 @@
+// Variables
+
+// Colors - Default
+$white:		#fff;
+// ... other colors
+$red:		#cc0000;
+$green: 	#00cc66;
+$blue:		#0066cc;
+$yellow:	#ffff00;
+
+// Colors - Theme
+$blue_85: #85bace;
+$blue_22: #22657f;
+$red_e6: #e64b38;
+$red_40: #40474f;
+$gray_0a: #0a151b;
+$gray_ee: #eef0f1;
+
+// Colors - Theme anomalies
+// ... other colors
+
+// Color Re-usable variables
+$color-primary: $blue_85;
+$color-primary-light: $blue_85;
+$color-primary-dark: $blue_22;
+
+$color-secondary: $red_e6;
+$color-secondary-light: $red_e6;
+$color-secondary-dark: $red_40;
+
+$color-tertiary: $red_40;
+
+$color-light:	$gray_ee;
+$color-dark:	$gray_0a;
+
+$color-success:	$green;
+$color-info:	$blue;
+$color-warning:	$yellow;
+$color-danger:	$red;
+
+// Font Family
+$font-family-primary: 'proxima-nova', sans-serif;
+// $font-family-secondary: 'Montserrat', sans-serif;
+
+// Font Weights - In Use
+$font-weight-regular:  	 	400;
+$font-weight-semi-bold:  	600;
+$font-weight-bold:		  	700;
+
+// Breakpoints
+$xs: 480px;
+$sm: 768px;
+$md: 1080px;
+$lg: 1200px;
+$xl: 1680px;
+
+// Wrapper/Container padding
+$grid-gutter-width: 40px;
+$grid-gutter-width-xs: 20px;
+
+// Sidebar
+$width-sidebar: 300px;
+
+// Navbar height
+$navbar-height-sm : 45px;
+$navbar-height-md : 60px;
+$navbar-height-lg : 75px;
+
+// Transition Speed
+$speed-fast : .3s;
+$speed-med  : .6s;
+$speed-slow : 1s;
+
+// Box Shadow
+$shadow : rgba($color-dark, .3) 0px 10px 30px -5px;
