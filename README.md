@@ -94,4 +94,4 @@ snippet-name/
 - **They're excerpts, not runnable themes.** I trimmed each one to the pieces that make up the component, so they depend on the rest of the theme (helper classes, template parts, other SCSS partials, plugins). Each README lists what's missing.
 - **Trimmed on purpose.** `// ... other imports`, `// ... other components` and `// ... other colors` mark where I left unrelated code out. I kept the reusable `$color-*` variables to show how I assign colors.
 - **Names are neutralized.** I replaced client and employer names with a generic "Acme" (function prefixes, class names, font and asset names, theme headers).
-- **Otherwise left as I wrote it.** Beyond the trims and renames above, the comments and structure are unchanged, apart from a handful of small fixes such as removing unused variables.
+- **Otherwise left as I wrote it.** Beyond the trims and renames above, the comments and structure are unchanged. The exceptions are small fixes (unused variables removed, a few missing guards added), large blocks of commented-out code removed, and whitespace tidied in a couple of stylesheets.
