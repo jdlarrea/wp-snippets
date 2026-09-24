@@ -1,0 +1,13 @@
+// ****************************************
+// Step 3
+.component-assessment-form {
+	.component-assessment-form-wrapper {
+		.page {
+			&.page-3 {
+				max-width: 650px;
+
+				// ... loading spinner for the property lookup substeps
+			}
+		}
+	}
+}

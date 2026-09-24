@@ -1,0 +1,94 @@
+// ****************************************
+// Step 2
+.component-assessment-form {
+	.component-assessment-form-wrapper {
+		.page {
+			&.page-2 {
+				max-width: 838px;
+
+				.content-middle {
+					display: flex;
+					margin-top: 30px;
+
+					.content-body {
+						width: 50%;
+						margin-right: 30px;
+						font-size: 14px;
+					}
+
+					.slider-wrapper {
+						margin-left: 30px;
+						width: 50%;
+						position: relative;
+
+						.slider-header {
+							max-width: 270px;
+							margin: 0 auto 20px;
+							text-align: center;
+							font-size: 18px;
+							font-weight: bold;
+							letter-spacing: 2px;
+						}
+
+						.swiper {
+							.swiper-wrapper {
+								.swiper-slide {
+									display: flex;
+									justify-content: center;
+									align-items: center;
+
+									> img {
+										border-radius: 0;
+										max-width: calc( 100% - 32px );
+									}
+
+									.slide-zoom {
+										display: block;
+										width: 22px;
+										height: 22px;
+										flex-shrink: 0;
+										align-self: flex-end;
+										margin-bottom: 10px;
+										margin-left: 10px;
+									}
+								}
+							}
+						}
+
+						.swiper-pagination {
+							margin-top: 10px;
+							position: static;
+
+							.swiper-pagination-bullet {
+								width: 10px;
+								height: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include media-max($sm) {
+		.component-assessment-form-wrapper {
+			.page {
+				&.page-2 {
+					.content-middle {
+						flex-direction: column;
+
+						.content-body,
+						.slider-wrapper {
+							width: 100%;
+							margin: 0;
+						}
+
+						.slider-wrapper {
+							margin-top: 40px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

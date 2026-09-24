@@ -1,0 +1,26 @@
+// Mixins
+
+// Media Queries
+@function calculateMqSize($size) {
+	$maxSize : $size - 1px;
+	@return $maxSize;
+}
+
+@mixin media-max($max) {
+	@media (max-width: calculateMqSize($max)) {
+		@content;
+	}
+}
+
+// ... other media query mixins and functions
+
+@mixin bg-contain {
+	background-size: contain;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+@mixin flex-center {
+	align-items: center;
+	justify-content: center;
+}

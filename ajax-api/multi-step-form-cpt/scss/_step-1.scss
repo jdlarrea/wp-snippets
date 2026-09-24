@@ -1,0 +1,11 @@
+// ****************************************
+// Step 1
+.component-assessment-form {
+	.component-assessment-form-wrapper {
+		.page {
+			&.page-1 {
+				max-width: 610px;
+			}
+		}
+	}
+}

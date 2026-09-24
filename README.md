@@ -78,6 +78,12 @@ Most of these come from custom themes built on the [Underscores](https://undersc
 | [`multi-column`](footers/multi-column) | Branding column plus link columns from separate menus, landing-page mode | `wp_nav_menu()`, ACF |
 | [`single-row`](footers/single-row) | Compact one-row footer with menu, social icons and legal links | `wp_nav_menu()`, ACF |
 
+### AJAX and APIs
+
+| Snippet | What it shows | Built with |
+|---|---|---|
+| [`multi-step-form-cpt`](ajax-api/multi-step-form-cpt) | Multi-step form that creates a post on step 1 and updates it on each later step, with resume, validation and admin filters | `admin-ajax.php`, `wp_insert_post`, ACF, `fetch` |
+
 ## How each snippet is organized
 
 ```
