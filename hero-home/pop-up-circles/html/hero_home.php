@@ -13,7 +13,7 @@ $html_image_background_style = 'style="background-image: url('. $image_src .');"
 
 if( $bg_position != 'default' ) {
 	if( $bg_position == 'custom' ) {
-		$html_image_background_style = 'style="background-image: url('. $image_src .'); background-position: '. $row['hero_image']['custom_position'] .';"';
+		$html_image_background_style = 'style="background-image: url('. $image_src .'); background-position: '. esc_attr( $row['hero_image']['custom_position'] ) .';"';
 	}
 	else {
 		$html_image_background_style = 'style="background-image: url('. $image_src .'); background-position: '. $bg_position .';"';
@@ -41,7 +41,7 @@ if( $hero_buttons ) {
 		$btn_class = 'btn-hero button ' . $btn['button_style'];
 		$new_tab = ($btn['new_tab']) ? 'target="_blank"' : '';
 
-		$html_buttons .= '<a href="'. $btn['link'] .'" class="'. $btn_class .'" '. $new_tab .'>'. $btn['text'] .'</a>';
+		$html_buttons .= '<a href="'. esc_url( $btn['link'] ) .'" class="'. $btn_class .'" '. $new_tab .'>'. $btn['text'] .'</a>';
 	}
 }
 

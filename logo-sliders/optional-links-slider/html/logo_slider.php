@@ -14,10 +14,10 @@ foreach( $logo_items as $item ) {
 	if( isset($item['url']) && !empty($item['url']) ) {
 		$new_tab = ($item['new_tab']) ? 'target="_blank"' : '';
 
-		$html_logo_items .= '<a href="'. $item['url'] .'" class="logo-slide" '. $new_tab .'><img class="b-lazy" data-src="'. $image_url .'" alt="'. $image_alt .'" /></a>';
+		$html_logo_items .= '<a href="'. esc_url( $item['url'] ) .'" class="logo-slide" '. $new_tab .'><img class="b-lazy" data-src="'. $image_url .'" alt="'. esc_attr( $image_alt ) .'" /></a>';
 	}
 	else {
-		$html_logo_items .= '<div class="logo-slide"><img class="b-lazy" data-src="'. $image_url .'" alt="'. $image_alt .'" /></div>';
+		$html_logo_items .= '<div class="logo-slide"><img class="b-lazy" data-src="'. $image_url .'" alt="'. esc_attr( $image_alt ) .'" /></div>';
 	}
 }
 

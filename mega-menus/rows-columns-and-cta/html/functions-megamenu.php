@@ -52,7 +52,7 @@ class acme_custom_mega extends Walker_Nav_Menu
 					if( $cta_link['url'] ) {
 						$new_tab = $cta_link['new_tab'] ? 'target="_blank"' : '';
 
-						$this->html_mega_parent_cta .= '<a href="'. $cta_link['url'] .'" class="mega-offer-content" '. $new_tab .'  style="background-image: url('. $cta_image['sizes']['large'] .')">';
+						$this->html_mega_parent_cta .= '<a href="'. esc_url( $cta_link['url'] ) .'" class="mega-offer-content" '. $new_tab .'  style="background-image: url('. $cta_image['sizes']['large'] .')">';
 					}
 					else {
 						$this->html_mega_parent_cta .= '<div class="mega-offer-content" style="background-image: url('. $cta_image['sizes']['large'] .')">';
@@ -83,7 +83,7 @@ class acme_custom_mega extends Walker_Nav_Menu
 				$mega_child_lvl1 = get_field( 'mega_child_lvl1', $item );
 				$link_url =  $mega_child_lvl1['link']['url'];
 				$link_external = $mega_child_lvl1['link']['new_tab'];
-				$this->html_child_lvl1_content_top .= $mega_child_lvl1['header'] ? ($link_url ? '<a href="'. $link_url .'" '.($link_external ? 'target="_blank"' : '').' class="child-lvl1-header">'. $mega_child_lvl1['header']  .'</a>' : '<div class="child-lvl1-header">'. $mega_child_lvl1['header']  .'</div>') : '';
+				$this->html_child_lvl1_content_top .= $mega_child_lvl1['header'] ? ($link_url ? '<a href="'. esc_url( $link_url ) .'" '.($link_external ? 'target="_blank"' : '').' class="child-lvl1-header">'. $mega_child_lvl1['header']  .'</a>' : '<div class="child-lvl1-header">'. $mega_child_lvl1['header']  .'</div>') : '';
 				$this->html_child_lvl1_content_top .= $mega_child_lvl1['text'] ? '<div class="child-lvl1-text">'. $mega_child_lvl1['text'] .'</div>' : '';
 				$this->html_child_lvl1_content_btm .= Helpers\Templates::to_string( $mega_child_lvl1['link'], 'framework_button', ['style' => 'btn-mega-child-lvl-1'] );
 			}
@@ -104,10 +104,10 @@ class acme_custom_mega extends Walker_Nav_Menu
 			$item_target = $item->target;
 
 			if( $item_target ) {
-				$output .= '<a class="menu-element" href="' . $permalink . '" target="'. $item_target .'">';
+				$output .= '<a class="menu-element" href="' . esc_url( $permalink ) . '" target="'. $item_target .'">';
 			}
 			else {
-				$output .= '<a class="menu-element" href="' . $permalink . '">';
+				$output .= '<a class="menu-element" href="' . esc_url( $permalink ) . '">';
 			}
 		}
 		else {
@@ -152,7 +152,7 @@ class acme_custom_mega extends Walker_Nav_Menu
 				if( $header || $text || $link ) {
 					$output .= '<div class="lvl-'. ( $depth ) .' mega-child-wrapper">';
 					$output .= '	<div class="lvl-'. ( $depth ) .' mega-child-header">';
-					$output .=  		$header ? (!empty($link_url) ? '<a href="'. $link_url .'" '.($link_external ? 'target="_blank"' : '').' class="child-lvl1-header">'. $header .'</a>' : '<div class="child-lvl1-header">'. $header .'</div>') : '';
+					$output .=  		$header ? (!empty($link_url) ? '<a href="'. esc_url( $link_url ) .'" '.($link_external ? 'target="_blank"' : '').' class="child-lvl1-header">'. $header .'</a>' : '<div class="child-lvl1-header">'. $header .'</div>') : '';
 					$output .=  		$text ? '<div class="child-lvl1-text">'. $text .'</div>' : '';
 					$output .=  		$link;
 					$output .= '	</div>';

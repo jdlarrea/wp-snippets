@@ -19,7 +19,7 @@ if( $social_media ) {
 	$html_social .= '<div class="footer-social-links">';
 
 	foreach( $social_media as $social ) {
-		$html_social .= '<a class="footer-social-link link-'. $social['icon_class'] .'" href="'. $social['url'] .'" target="_blank"><i class="icon-'. $social['icon_class'] .'"></i></a>';
+		$html_social .= '<a class="footer-social-link link-'. $social['icon_class'] .'" href="'. esc_url( $social['url'] ) .'" target="_blank"><i class="icon-'. $social['icon_class'] .'"></i></a>';
 	}
 
 	$html_social .= '</div>';
@@ -34,8 +34,8 @@ if( $social_media ) {
 		<div class="top">
 			<div class="top-wrapper wrapper">
 				<div class="footer-col footer-col-1 branding">
-					<a aria-label="<?= get_bloginfo('name') ?>" href="<?= get_bloginfo( 'url' ) ?>" rel="home" class="logo-footer">
-						<img src="<?= $site_logo['sizes']['large'] ?>" alt="<?= get_bloginfo('name') ?>">
+					<a aria-label="<?= esc_attr( get_bloginfo('name') ) ?>" href="<?= esc_url( get_bloginfo( 'url' ) ) ?>" rel="home" class="logo-footer">
+						<img src="<?= $site_logo['sizes']['large'] ?>" alt="<?= esc_attr( get_bloginfo('name') ) ?>">
 					</a>
 
 					<?= ( $footer_blurb ) ? '<div class="blurb">'. $footer_blurb .'</div>' : '' ?>

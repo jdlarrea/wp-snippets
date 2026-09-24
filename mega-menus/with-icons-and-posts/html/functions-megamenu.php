@@ -137,10 +137,10 @@ class acme_custom_mega extends Walker_Nav_Menu
 			$item_target = $item->target;
 
 			if( $item_target ) {
-				$output .= '<a class="menu-element is-link" href="' . $permalink . '" target="'. $item_target .'">';
+				$output .= '<a class="menu-element is-link" href="' . esc_url( $permalink ) . '" target="'. $item_target .'">';
 			}
 			else {
-				$output .= '<a class="menu-element is-link" href="' . $permalink . '">';
+				$output .= '<a class="menu-element is-link" href="' . esc_url( $permalink ) . '">';
 			}
 		}
 		else {

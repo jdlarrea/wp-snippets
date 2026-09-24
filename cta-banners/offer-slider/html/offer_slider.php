@@ -34,7 +34,7 @@ if (isset($select_offers) && is_array($select_offers) && count($select_offers) >
 					echo '<div class="swiper-slide image-slide">';
 							acme_post_thumbnail('extra_large', 'absolute');
 					if( $video_url ) {
-							echo '<a href="'. $video_url .'" class="play-link" data-fancybox><i class="icon-play"></i></a>';
+							echo '<a href="'. esc_url( $video_url ) .'" class="play-link" data-fancybox><i class="icon-play"></i></a>';
 					}
 					echo '</div>';
 

@@ -19,7 +19,7 @@ $social_media_profiles = function_exists( 'get_field' ) ? get_field('social_medi
 	<footer id="colophon" class="site-footer">
 		<div class="wrapper">
 			<a class="logo-link-home-footer" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<img class="logo-img-footer" src="<?= (isset($logo_alt['sizes']['medium'])?$logo_alt['sizes']['medium']:'') ?>" alt="<?= get_bloginfo( 'name' ) ?>">
+				<img class="logo-img-footer" src="<?= (isset($logo_alt['sizes']['medium'])?$logo_alt['sizes']['medium']:'') ?>" alt="<?= esc_attr( get_bloginfo( 'name' ) ) ?>">
 			</a>
 
 			<div class="content-wrapper">
@@ -34,7 +34,7 @@ $social_media_profiles = function_exists( 'get_field' ) ? get_field('social_medi
 							$url = $social['url'];
 
 							if( $url ) {
-								echo '<a href="'. $url .'" class="icon-'. $platform .'" target="_blank"></a>';
+								echo '<a href="'. esc_url( $url ) .'" class="icon-'. $platform .'" target="_blank"></a>';
 							}
 						}
 

@@ -50,8 +50,8 @@ if( is_single() ) {
 	<header id="masthead" class="site-header <?= $class_header ?>">
 		<div class="wrapper">
 			<a class="logo-link-home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<img class="logo-img-main" src="<?= (isset($logo_main['sizes']['medium'])?$logo_main['sizes']['medium']:'') ?>" alt="<?= get_bloginfo( 'name' ) ?>">
-				<img class="logo-img-color" src="<?= (isset($logo_color['sizes']['medium'])?$logo_color['sizes']['medium']:'') ?>" alt="<?= get_bloginfo( 'name' ) ?>">
+				<img class="logo-img-main" src="<?= (isset($logo_main['sizes']['medium'])?$logo_main['sizes']['medium']:'') ?>" alt="<?= esc_attr( get_bloginfo( 'name' ) ) ?>">
+				<img class="logo-img-color" src="<?= (isset($logo_color['sizes']['medium'])?$logo_color['sizes']['medium']:'') ?>" alt="<?= esc_attr( get_bloginfo( 'name' ) ) ?>">
 			</a>
 
 			<nav id="site-navigation" class="main-navigation">
